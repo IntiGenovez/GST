@@ -23,53 +23,52 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.btn_venda = New System.Windows.Forms.Button()
+        Me.btn_retaguarda = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(135, 20)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.Label1.Location = New System.Drawing.Point(180, 25)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(120, 54)
+        Me.Label1.Size = New System.Drawing.Size(124, 55)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "GST"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Button1
+        'btn_venda
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(22, 101)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(155, 34)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Vendas"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_venda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_venda.Location = New System.Drawing.Point(29, 124)
+        Me.btn_venda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_venda.Name = "btn_venda"
+        Me.btn_venda.Size = New System.Drawing.Size(207, 42)
+        Me.btn_venda.TabIndex = 1
+        Me.btn_venda.Text = "Vendas"
+        Me.btn_venda.UseVisualStyleBackColor = True
         '
-        'Button2
+        'btn_retaguarda
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(202, 101)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(155, 34)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Retaguarda"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.btn_retaguarda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_retaguarda.Location = New System.Drawing.Point(269, 124)
+        Me.btn_retaguarda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_retaguarda.Name = "btn_retaguarda"
+        Me.btn_retaguarda.Size = New System.Drawing.Size(207, 42)
+        Me.btn_retaguarda.TabIndex = 2
+        Me.btn_retaguarda.Text = "Retaguarda"
+        Me.btn_retaguarda.UseVisualStyleBackColor = True
         '
         'Form1
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(387, 166)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(516, 204)
+        Me.Controls.Add(Me.btn_retaguarda)
+        Me.Controls.Add(Me.btn_venda)
         Me.Controls.Add(Me.Label1)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Início"
         Me.ResumeLayout(False)
@@ -78,6 +77,6 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents btn_venda As Button
+    Friend WithEvents btn_retaguarda As Button
 End Class

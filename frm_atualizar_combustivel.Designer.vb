@@ -26,14 +26,17 @@ Partial Class frm_atualizar_combustivel
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.cmb_tipo = New System.Windows.Forms.ComboBox()
+        Me.txt_preco = New System.Windows.Forms.TextBox()
+        Me.txt_qtde = New System.Windows.Forms.TextBox()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btn_confirmar = New System.Windows.Forms.Button()
+        Me.lbl_combustivel = New System.Windows.Forms.Label()
+        Me.lbl_preco = New System.Windows.Forms.Label()
+        Me.lbl_qtde = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
         'Label1
@@ -76,34 +79,34 @@ Partial Class frm_atualizar_combustivel
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Estoque atual"
         '
-        'ComboBox1
+        'cmb_tipo
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Perda", "Recebimento"})
-        Me.ComboBox1.Location = New System.Drawing.Point(299, 215)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 28)
-        Me.ComboBox1.TabIndex = 4
+        Me.cmb_tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_tipo.FormattingEnabled = True
+        Me.cmb_tipo.Items.AddRange(New Object() {"Perda", "Recebimento"})
+        Me.cmb_tipo.Location = New System.Drawing.Point(296, 264)
+        Me.cmb_tipo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmb_tipo.Name = "cmb_tipo"
+        Me.cmb_tipo.Size = New System.Drawing.Size(121, 28)
+        Me.cmb_tipo.TabIndex = 4
         '
-        'TextBox1
+        'txt_preco
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(41, 298)
-        Me.TextBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(100, 27)
-        Me.TextBox1.TabIndex = 5
+        Me.txt_preco.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_preco.Location = New System.Drawing.Point(41, 298)
+        Me.txt_preco.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_preco.Name = "txt_preco"
+        Me.txt_preco.Size = New System.Drawing.Size(100, 27)
+        Me.txt_preco.TabIndex = 5
         '
-        'TextBox2
+        'txt_qtde
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(299, 298)
-        Me.TextBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(100, 27)
-        Me.TextBox2.TabIndex = 6
+        Me.txt_qtde.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_qtde.Location = New System.Drawing.Point(299, 298)
+        Me.txt_qtde.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_qtde.Name = "txt_qtde"
+        Me.txt_qtde.Size = New System.Drawing.Size(100, 27)
+        Me.txt_qtde.TabIndex = 6
         '
         'Label5
         '
@@ -115,14 +118,14 @@ Partial Class frm_atualizar_combustivel
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Nome"
         '
-        'TextBox3
+        'txt_nome
         '
-        Me.TextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox3.Location = New System.Drawing.Point(35, 117)
-        Me.TextBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(247, 27)
-        Me.TextBox3.TabIndex = 8
+        Me.txt_nome.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_nome.Location = New System.Drawing.Point(35, 117)
+        Me.txt_nome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_nome.Name = "txt_nome"
+        Me.txt_nome.Size = New System.Drawing.Size(247, 27)
+        Me.txt_nome.TabIndex = 8
         '
         'Label6
         '
@@ -145,29 +148,59 @@ Partial Class frm_atualizar_combustivel
         Me.ComboBox2.Size = New System.Drawing.Size(121, 28)
         Me.ComboBox2.TabIndex = 10
         '
-        'Button1
+        'btn_confirmar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(347, 375)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(99, 38)
-        Me.Button1.TabIndex = 11
-        Me.Button1.Text = "Confirmar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btn_confirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_confirmar.Location = New System.Drawing.Point(347, 375)
+        Me.btn_confirmar.Name = "btn_confirmar"
+        Me.btn_confirmar.Size = New System.Drawing.Size(99, 38)
+        Me.btn_confirmar.TabIndex = 11
+        Me.btn_confirmar.Text = "Confirmar"
+        Me.btn_confirmar.UseVisualStyleBackColor = True
+        '
+        'lbl_combustivel
+        '
+        Me.lbl_combustivel.AutoSize = True
+        Me.lbl_combustivel.Location = New System.Drawing.Point(188, 39)
+        Me.lbl_combustivel.Name = "lbl_combustivel"
+        Me.lbl_combustivel.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_combustivel.TabIndex = 12
+        Me.lbl_combustivel.Text = "Label7"
+        '
+        'lbl_preco
+        '
+        Me.lbl_preco.AutoSize = True
+        Me.lbl_preco.Location = New System.Drawing.Point(37, 226)
+        Me.lbl_preco.Name = "lbl_preco"
+        Me.lbl_preco.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_preco.TabIndex = 13
+        Me.lbl_preco.Text = "Label7"
+        '
+        'lbl_qtde
+        '
+        Me.lbl_qtde.AutoSize = True
+        Me.lbl_qtde.Location = New System.Drawing.Point(296, 226)
+        Me.lbl_qtde.Name = "lbl_qtde"
+        Me.lbl_qtde.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_qtde.TabIndex = 14
+        Me.lbl_qtde.Text = "Label7"
         '
         'frm_atualizar_combustivel
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(500, 448)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.lbl_qtde)
+        Me.Controls.Add(Me.lbl_preco)
+        Me.Controls.Add(Me.lbl_combustivel)
+        Me.Controls.Add(Me.btn_confirmar)
         Me.Controls.Add(Me.ComboBox2)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.TextBox3)
+        Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.Controls.Add(Me.txt_qtde)
+        Me.Controls.Add(Me.txt_preco)
+        Me.Controls.Add(Me.cmb_tipo)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
@@ -184,12 +217,15 @@ Partial Class frm_atualizar_combustivel
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents cmb_tipo As ComboBox
+    Friend WithEvents txt_preco As TextBox
+    Friend WithEvents txt_qtde As TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents txt_nome As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents ComboBox2 As ComboBox
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btn_confirmar As Button
+    Friend WithEvents lbl_combustivel As Label
+    Friend WithEvents lbl_preco As Label
+    Friend WithEvents lbl_qtde As Label
 End Class

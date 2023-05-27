@@ -23,7 +23,8 @@ Partial Class frm_selecao
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.cmb_selecao = New System.Windows.Forms.ComboBox()
+        Me.btn_confirmar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -36,22 +37,33 @@ Partial Class frm_selecao
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Informe o combustível"
         '
-        'ComboBox1
+        'cmb_selecao
         '
-        Me.ComboBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Location = New System.Drawing.Point(52, 86)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(299, 28)
-        Me.ComboBox1.TabIndex = 1
+        Me.cmb_selecao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_selecao.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_selecao.FormattingEnabled = True
+        Me.cmb_selecao.Location = New System.Drawing.Point(52, 86)
+        Me.cmb_selecao.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmb_selecao.Name = "cmb_selecao"
+        Me.cmb_selecao.Size = New System.Drawing.Size(299, 28)
+        Me.cmb_selecao.TabIndex = 1
+        '
+        'btn_confirmar
+        '
+        Me.btn_confirmar.Location = New System.Drawing.Point(127, 132)
+        Me.btn_confirmar.Name = "btn_confirmar"
+        Me.btn_confirmar.Size = New System.Drawing.Size(144, 46)
+        Me.btn_confirmar.TabIndex = 2
+        Me.btn_confirmar.Text = "Confirmar"
+        Me.btn_confirmar.UseVisualStyleBackColor = True
         '
         'frm_selecao
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(420, 164)
-        Me.Controls.Add(Me.ComboBox1)
+        Me.ClientSize = New System.Drawing.Size(415, 201)
+        Me.Controls.Add(Me.btn_confirmar)
+        Me.Controls.Add(Me.cmb_selecao)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_selecao"
@@ -62,5 +74,6 @@ Partial Class frm_selecao
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents cmb_selecao As ComboBox
+    Friend WithEvents btn_confirmar As Button
 End Class
