@@ -19,4 +19,34 @@
             MsgBox("Conexão Falha", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Falha")
         End Try
     End Sub
+
+    Sub carregar_combustivel()
+        'Adiciona os combustíveis do db no cmb
+        sql = "select * from tb_combustivel order by nome asc"
+        rs = db.Execute(sql)
+        With frm_retaguarda
+            .cmb_combustivel.Items.Clear()
+            .lbl_preco.Text = ""
+            .lbl_qtde.Text = ""
+            .dgv_comb.Rows.Clear()
+            Do While rs.EOF = False
+                .cmb_combustivel.Items.Add(rs.Fields(1).Value)
+                .dgv_comb.Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value)
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
+
+    Sub carregar_vendas()
+        'Adiciona os combustíveis do db no cmb
+        sql = "select * from tb_vendas order by data asc"
+        rs = db.Execute(sql)
+        With frm_retaguarda
+            .dgv_vendas.Rows.Clear()
+            Do While rs.EOF = False
+                .dgv_vendas.Rows.Add(rs.Fields(5).Value, rs.Fields(4).Value, CDbl(rs.Fields(2).Value) * CDbl(rs.Fields(3).Value), rs.Fields(1).Value)
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
 End Module

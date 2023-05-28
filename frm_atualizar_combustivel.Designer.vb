@@ -32,7 +32,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label5 = New System.Windows.Forms.Label()
         Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.ComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.cmb_status = New System.Windows.Forms.ComboBox()
         Me.btn_confirmar = New System.Windows.Forms.Button()
         Me.lbl_combustivel = New System.Windows.Forms.Label()
         Me.lbl_preco = New System.Windows.Forms.Label()
@@ -81,6 +81,7 @@ Partial Class frm_atualizar_combustivel
         '
         'cmb_tipo
         '
+        Me.cmb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_tipo.FormattingEnabled = True
         Me.cmb_tipo.Items.AddRange(New Object() {"Perda", "Recebimento"})
@@ -137,23 +138,24 @@ Partial Class frm_atualizar_combustivel
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Status"
         '
-        'ComboBox2
+        'cmb_status
         '
-        Me.ComboBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ComboBox2.FormattingEnabled = True
-        Me.ComboBox2.Items.AddRange(New Object() {"Ativo", "Inativo"})
-        Me.ComboBox2.Location = New System.Drawing.Point(160, 375)
-        Me.ComboBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox2.Name = "ComboBox2"
-        Me.ComboBox2.Size = New System.Drawing.Size(121, 28)
-        Me.ComboBox2.TabIndex = 10
+        Me.cmb_status.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.cmb_status.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_status.FormattingEnabled = True
+        Me.cmb_status.Items.AddRange(New Object() {"Ativo", "Inativo"})
+        Me.cmb_status.Location = New System.Drawing.Point(160, 375)
+        Me.cmb_status.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.cmb_status.Name = "cmb_status"
+        Me.cmb_status.Size = New System.Drawing.Size(121, 28)
+        Me.cmb_status.TabIndex = 10
         '
         'btn_confirmar
         '
         Me.btn_confirmar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_confirmar.Location = New System.Drawing.Point(347, 375)
+        Me.btn_confirmar.Location = New System.Drawing.Point(325, 358)
         Me.btn_confirmar.Name = "btn_confirmar"
-        Me.btn_confirmar.Size = New System.Drawing.Size(99, 38)
+        Me.btn_confirmar.Size = New System.Drawing.Size(126, 58)
         Me.btn_confirmar.TabIndex = 11
         Me.btn_confirmar.Text = "Confirmar"
         Me.btn_confirmar.UseVisualStyleBackColor = True
@@ -194,7 +196,7 @@ Partial Class frm_atualizar_combustivel
         Me.Controls.Add(Me.lbl_preco)
         Me.Controls.Add(Me.lbl_combustivel)
         Me.Controls.Add(Me.btn_confirmar)
-        Me.Controls.Add(Me.ComboBox2)
+        Me.Controls.Add(Me.cmb_status)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label5)
@@ -223,7 +225,7 @@ Partial Class frm_atualizar_combustivel
     Friend WithEvents Label5 As Label
     Friend WithEvents txt_nome As TextBox
     Friend WithEvents Label6 As Label
-    Friend WithEvents ComboBox2 As ComboBox
+    Friend WithEvents cmb_status As ComboBox
     Friend WithEvents btn_confirmar As Button
     Friend WithEvents lbl_combustivel As Label
     Friend WithEvents lbl_preco As Label
