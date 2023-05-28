@@ -48,13 +48,31 @@
                 Me.Close()
                 Exit Sub
             End If
+
+            If rs.Fields(4).Value > 0 Then
+                If MsgBox("Você possui um desconto de " & rs.Fields(4).Value & "Deseja resgatar agora?",
+                        MsgBoxStyle.Information + MsgBoxStyle.YesNo, "Desconto") Then
+                    lbl_desconto.Text = rs.Fields(4).Value
+                End If
+            End If
+
             'atualiza o estoque de combustivel
-            sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") & " where id_comb=" & idCombustivel
+            sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") &
+                  " where id_comb=" & idCombustivel
             db.Execute(sql)
+
             'registra a venda
-            sql = "insert into tb_vendas (data, valor, qtde, tipo_comb, cpf) values ('" & DateTime.Now & "', " & txt_valor.Text.Replace(",", ".") & ", " & txt_qtde.Text.Replace(",", ".") & ", '" & combustivelSelecao & "', '" & txt_cpf.Text & "')"
+            sql = "insert into tb_vendas (data, valor, qtde, tipo_comb, cpf) values ('" & DateTime.Now &
+                  "', " & (txt_valor.Text - lbl_desconto.Text).ToString.Replace(",", ".") &
+                  ", " & txt_qtde.Text.Replace(",", ".") & ", '" & combustivelSelecao &
+                  "', '" & txt_cpf.Text & "')"
             db.Execute(sql)
-            MsgBox("Sua venda com CPF foi confirmada com sucesso no valor de R$" & txt_valor.Text, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
+
+            sql = "update tb_clientes set fidelidade = fidelidade + " & (txt_valor.Text * 0.1).ToString.Replace(",", ".") &
+                  " where cpf='" & txt_cpf.Text & "'"
+            db.Execute(sql)
+
+            MsgBox("Sua venda com CPF foi confirmada com sucesso no valor de R$" & (txt_valor.Text * 0.9), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
             frm_selecao.Show()
             Me.Close()
         Else

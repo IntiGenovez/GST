@@ -89,9 +89,9 @@ Partial Class frm_vendas
         Me.lbl_desconto.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lbl_desconto.Location = New System.Drawing.Point(505, 135)
         Me.lbl_desconto.Name = "lbl_desconto"
-        Me.lbl_desconto.Size = New System.Drawing.Size(80, 24)
+        Me.lbl_desconto.Size = New System.Drawing.Size(20, 24)
         Me.lbl_desconto.TabIndex = 5
-        Me.lbl_desconto.Text = "RS00,00"
+        Me.lbl_desconto.Text = "0"
         '
         'lbl_cpf
         '

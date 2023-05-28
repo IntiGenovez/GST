@@ -12,7 +12,7 @@
     End Sub
 
     Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
-        If txt_cpf.Text = "" Or txt_email.Text = "" Or txt_nome.Text = "" Or txt_telefone.Text = "" Then
+        If Not txt_cpf.MaskFull Or txt_email.Text = "" Or txt_nome.Text = "" Or txt_telefone.Text = "" Then
             MsgBox("Preencha todos os campos!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "Aviso")
             Exit Sub
         End If

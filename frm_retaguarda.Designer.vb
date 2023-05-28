@@ -32,6 +32,14 @@ Partial Class frm_retaguarda
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmb_combustivel = New System.Windows.Forms.ComboBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
+        Me.dgv_clientes = New System.Windows.Forms.DataGridView()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.ToolStrip4 = New System.Windows.Forms.ToolStrip()
+        Me.lbl_novo_cliente = New System.Windows.Forms.ToolStripLabel()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.dgv_comb = New System.Windows.Forms.DataGridView()
         Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -68,17 +76,11 @@ Partial Class frm_retaguarda
         Me.Column21 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
         Me.lbl_nova_conta = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStrip4 = New System.Windows.Forms.ToolStrip()
-        Me.lbl_novo_cliente = New System.Windows.Forms.ToolStripLabel()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
+        CType(Me.dgv_clientes, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.ToolStrip4.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.dgv_comb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -89,8 +91,6 @@ Partial Class frm_retaguarda
         Me.TabPage6.SuspendLayout()
         CType(Me.dgv_contas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip3.SuspendLayout()
-        Me.ToolStrip4.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -201,7 +201,7 @@ Partial Class frm_retaguarda
         '
         'TabPage2
         '
-        Me.TabPage2.Controls.Add(Me.DataGridView1)
+        Me.TabPage2.Controls.Add(Me.dgv_clientes)
         Me.TabPage2.Controls.Add(Me.ToolStrip4)
         Me.TabPage2.Location = New System.Drawing.Point(4, 34)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -211,6 +211,74 @@ Partial Class frm_retaguarda
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Clientes"
         Me.TabPage2.UseVisualStyleBackColor = True
+        '
+        'dgv_clientes
+        '
+        Me.dgv_clientes.AllowUserToAddRows = False
+        Me.dgv_clientes.AllowUserToDeleteRows = False
+        Me.dgv_clientes.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
+        Me.dgv_clientes.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgv_clientes.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column22, Me.Column3, Me.Column4})
+        Me.dgv_clientes.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.dgv_clientes.Location = New System.Drawing.Point(3, 27)
+        Me.dgv_clientes.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.dgv_clientes.Name = "dgv_clientes"
+        Me.dgv_clientes.ReadOnly = True
+        Me.dgv_clientes.RowHeadersWidth = 51
+        Me.dgv_clientes.RowTemplate.Height = 24
+        Me.dgv_clientes.Size = New System.Drawing.Size(919, 386)
+        Me.dgv_clientes.TabIndex = 1
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Nome"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "E-mail"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column22
+        '
+        Me.Column22.HeaderText = "Fidelidade"
+        Me.Column22.MinimumWidth = 6
+        Me.Column22.Name = "Column22"
+        Me.Column22.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Editar"
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Excluir"
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
+        '
+        'ToolStrip4
+        '
+        Me.ToolStrip4.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbl_novo_cliente})
+        Me.ToolStrip4.Location = New System.Drawing.Point(3, 2)
+        Me.ToolStrip4.Name = "ToolStrip4"
+        Me.ToolStrip4.Size = New System.Drawing.Size(919, 25)
+        Me.ToolStrip4.TabIndex = 0
+        Me.ToolStrip4.Text = "ToolStrip4"
+        '
+        'lbl_novo_cliente
+        '
+        Me.lbl_novo_cliente.Name = "lbl_novo_cliente"
+        Me.lbl_novo_cliente.Size = New System.Drawing.Size(95, 22)
+        Me.lbl_novo_cliente.Text = "Novo Cliente"
         '
         'TabPage3
         '
@@ -536,74 +604,6 @@ Partial Class frm_retaguarda
         Me.lbl_nova_conta.Size = New System.Drawing.Size(85, 22)
         Me.lbl_nova_conta.Text = "Nova conta"
         '
-        'ToolStrip4
-        '
-        Me.ToolStrip4.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip4.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbl_novo_cliente})
-        Me.ToolStrip4.Location = New System.Drawing.Point(3, 2)
-        Me.ToolStrip4.Name = "ToolStrip4"
-        Me.ToolStrip4.Size = New System.Drawing.Size(919, 25)
-        Me.ToolStrip4.TabIndex = 0
-        Me.ToolStrip4.Text = "ToolStrip4"
-        '
-        'lbl_novo_cliente
-        '
-        Me.lbl_novo_cliente.Name = "lbl_novo_cliente"
-        Me.lbl_novo_cliente.Size = New System.Drawing.Size(95, 28)
-        Me.lbl_novo_cliente.Text = "Novo Cliente"
-        '
-        'DataGridView1
-        '
-        Me.DataGridView1.AllowUserToAddRows = False
-        Me.DataGridView1.AllowUserToDeleteRows = False
-        Me.DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column1, Me.Column2, Me.Column22, Me.Column3, Me.Column4})
-        Me.DataGridView1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DataGridView1.Location = New System.Drawing.Point(3, 27)
-        Me.DataGridView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.ReadOnly = True
-        Me.DataGridView1.RowHeadersWidth = 51
-        Me.DataGridView1.RowTemplate.Height = 24
-        Me.DataGridView1.Size = New System.Drawing.Size(919, 386)
-        Me.DataGridView1.TabIndex = 1
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Nome"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "E-mail"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column22
-        '
-        Me.Column22.HeaderText = "Fidelidade"
-        Me.Column22.MinimumWidth = 6
-        Me.Column22.Name = "Column22"
-        Me.Column22.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Editar"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Excluir"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
-        '
         'frm_retaguarda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -618,6 +618,9 @@ Partial Class frm_retaguarda
         Me.TabPage1.PerformLayout()
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage2.PerformLayout()
+        CType(Me.dgv_clientes, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.ToolStrip4.ResumeLayout(False)
+        Me.ToolStrip4.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         CType(Me.dgv_comb, System.ComponentModel.ISupportInitialize).EndInit()
@@ -635,9 +638,6 @@ Partial Class frm_retaguarda
         CType(Me.dgv_contas, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ToolStrip3.ResumeLayout(False)
         Me.ToolStrip3.PerformLayout()
-        Me.ToolStrip4.ResumeLayout(False)
-        Me.ToolStrip4.PerformLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -690,7 +690,7 @@ Partial Class frm_retaguarda
     Friend WithEvents lbl_novo_comb As ToolStripLabel
     Friend WithEvents ToolStrip4 As ToolStrip
     Friend WithEvents lbl_novo_cliente As ToolStripLabel
-    Friend WithEvents DataGridView1 As DataGridView
+    Friend WithEvents dgv_clientes As DataGridView
     Friend WithEvents Column1 As DataGridViewTextBoxColumn
     Friend WithEvents Column2 As DataGridViewTextBoxColumn
     Friend WithEvents Column22 As DataGridViewTextBoxColumn

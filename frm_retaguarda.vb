@@ -96,4 +96,20 @@
         isUpdate = False
         frm_cadastro.ShowDialog()
     End Sub
+
+    Private Sub dgv_clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_clientes.CellContentClick
+        With dgv_contas
+            sql = "select * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
+            rs = db.Execute(sql)
+            If .CurrentRow.Cells(3).Selected Then
+                isUpdate = True
+                frm_cadastro.ShowDialog()
+            ElseIf .CurrentRow.Cells(4).Selected And MsgBox("Deseja mesmo deletar o cliente?" + vbNewLine &
+                                  "Cliente: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") Then
+                sql = "delete * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
+                db.Execute(sql)
+            End If
+            carregar_combustivel()
+        End With
+    End Sub
 End Class

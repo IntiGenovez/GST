@@ -62,4 +62,16 @@
             Loop
         End With
     End Sub
+
+    Sub carregar_clientes()
+        sql = "select * from tb_clientes order by nome asc"
+        rs = db.Execute(sql)
+        With frm_retaguarda.dgv_clientes
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(4).Value, Nothing, Nothing)
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
 End Module

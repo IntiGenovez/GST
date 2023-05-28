@@ -29,8 +29,8 @@ Partial Class frm_cadastro
         Me.txt_email = New System.Windows.Forms.TextBox()
         Me.txt_telefone = New System.Windows.Forms.TextBox()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
-        Me.txt_cpf = New System.Windows.Forms.TextBox()
         Me.Label3 = New System.Windows.Forms.Label()
+        Me.txt_cpf = New System.Windows.Forms.MaskedTextBox()
         Me.SuspendLayout()
         '
         'Label1
@@ -101,15 +101,6 @@ Partial Class frm_cadastro
         Me.btn_cadastrar.Text = "Cadastrar"
         Me.btn_cadastrar.UseVisualStyleBackColor = True
         '
-        'txt_cpf
-        '
-        Me.txt_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cpf.Location = New System.Drawing.Point(16, 280)
-        Me.txt_cpf.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txt_cpf.Name = "txt_cpf"
-        Me.txt_cpf.Size = New System.Drawing.Size(455, 27)
-        Me.txt_cpf.TabIndex = 18
-        '
         'Label3
         '
         Me.Label3.AutoSize = True
@@ -119,6 +110,15 @@ Partial Class frm_cadastro
         Me.Label3.Size = New System.Drawing.Size(47, 24)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "CPF"
+        '
+        'txt_cpf
+        '
+        Me.txt_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_cpf.Location = New System.Drawing.Point(16, 281)
+        Me.txt_cpf.Mask = "999,999,999-99"
+        Me.txt_cpf.Name = "txt_cpf"
+        Me.txt_cpf.Size = New System.Drawing.Size(454, 27)
+        Me.txt_cpf.TabIndex = 18
         '
         'frm_cadastro
         '
@@ -149,6 +149,6 @@ Partial Class frm_cadastro
     Friend WithEvents txt_email As TextBox
     Friend WithEvents txt_telefone As TextBox
     Friend WithEvents btn_cadastrar As Button
-    Friend WithEvents txt_cpf As TextBox
     Friend WithEvents Label3 As Label
+    Friend WithEvents txt_cpf As MaskedTextBox
 End Class
