@@ -82,13 +82,13 @@ Partial Class frm_atualizar_combustivel
         'cmb_tipo
         '
         Me.cmb_tipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.cmb_tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cmb_tipo.Font = New System.Drawing.Font("Microsoft Sans Serif", 7.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_tipo.FormattingEnabled = True
         Me.cmb_tipo.Items.AddRange(New Object() {"Perda", "Recebimento"})
         Me.cmb_tipo.Location = New System.Drawing.Point(296, 264)
         Me.cmb_tipo.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_tipo.Name = "cmb_tipo"
-        Me.cmb_tipo.Size = New System.Drawing.Size(121, 28)
+        Me.cmb_tipo.Size = New System.Drawing.Size(121, 24)
         Me.cmb_tipo.TabIndex = 4
         '
         'txt_preco
@@ -165,27 +165,24 @@ Partial Class frm_atualizar_combustivel
         Me.lbl_combustivel.AutoSize = True
         Me.lbl_combustivel.Location = New System.Drawing.Point(188, 39)
         Me.lbl_combustivel.Name = "lbl_combustivel"
-        Me.lbl_combustivel.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_combustivel.Size = New System.Drawing.Size(0, 17)
         Me.lbl_combustivel.TabIndex = 12
-        Me.lbl_combustivel.Text = "Label7"
         '
         'lbl_preco
         '
         Me.lbl_preco.AutoSize = True
         Me.lbl_preco.Location = New System.Drawing.Point(37, 226)
         Me.lbl_preco.Name = "lbl_preco"
-        Me.lbl_preco.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_preco.Size = New System.Drawing.Size(0, 17)
         Me.lbl_preco.TabIndex = 13
-        Me.lbl_preco.Text = "Label7"
         '
         'lbl_qtde
         '
         Me.lbl_qtde.AutoSize = True
         Me.lbl_qtde.Location = New System.Drawing.Point(296, 226)
         Me.lbl_qtde.Name = "lbl_qtde"
-        Me.lbl_qtde.Size = New System.Drawing.Size(51, 17)
+        Me.lbl_qtde.Size = New System.Drawing.Size(0, 17)
         Me.lbl_qtde.TabIndex = 14
-        Me.lbl_qtde.Text = "Label7"
         '
         'frm_atualizar_combustivel
         '

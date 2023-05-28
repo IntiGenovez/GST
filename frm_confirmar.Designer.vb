@@ -23,8 +23,8 @@ Partial Class frm_confirmar
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.txt_cadastrar = New System.Windows.Forms.Button()
+        Me.txt_corrigir = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Label1
@@ -37,35 +37,35 @@ Partial Class frm_confirmar
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "CPF não cadastrado"
         '
-        'Button1
+        'txt_cadastrar
         '
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(79, 114)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(224, 49)
-        Me.Button1.TabIndex = 1
-        Me.Button1.Text = "Cadastrar"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.txt_cadastrar.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_cadastrar.Location = New System.Drawing.Point(79, 114)
+        Me.txt_cadastrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_cadastrar.Name = "txt_cadastrar"
+        Me.txt_cadastrar.Size = New System.Drawing.Size(224, 49)
+        Me.txt_cadastrar.TabIndex = 1
+        Me.txt_cadastrar.Text = "Cadastrar"
+        Me.txt_cadastrar.UseVisualStyleBackColor = True
         '
-        'Button2
+        'txt_corrigir
         '
-        Me.Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button2.Location = New System.Drawing.Point(308, 114)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(224, 49)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "Corrigir CPF"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.txt_corrigir.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_corrigir.Location = New System.Drawing.Point(308, 114)
+        Me.txt_corrigir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_corrigir.Name = "txt_corrigir"
+        Me.txt_corrigir.Size = New System.Drawing.Size(224, 49)
+        Me.txt_corrigir.TabIndex = 2
+        Me.txt_corrigir.Text = "Corrigir CPF"
+        Me.txt_corrigir.UseVisualStyleBackColor = True
         '
         'frm_confirmar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(623, 202)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.txt_corrigir)
+        Me.Controls.Add(Me.txt_cadastrar)
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_confirmar"
@@ -76,6 +76,6 @@ Partial Class frm_confirmar
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents txt_cadastrar As Button
+    Friend WithEvents txt_corrigir As Button
 End Class

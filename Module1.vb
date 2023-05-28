@@ -1,6 +1,7 @@
 ﻿Module Module1
-    Public combustivelSelecao, sql As String
+    Public combustivelSelecao, sql, cpf As String
     Public idCombustivel As Integer
+    Public isUpdate As Boolean
     Public db As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Public dir_banco = Application.StartupPath & "\db\gstdb.mdb"
@@ -31,7 +32,7 @@
             .dgv_comb.Rows.Clear()
             Do While rs.EOF = False
                 .cmb_combustivel.Items.Add(rs.Fields(1).Value)
-                .dgv_comb.Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value)
+                .dgv_comb.Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(2).Value, rs.Fields(3).Value, Nothing, Nothing)
                 rs.MoveNext()
             Loop
         End With
@@ -44,7 +45,19 @@
         With frm_retaguarda
             .dgv_vendas.Rows.Clear()
             Do While rs.EOF = False
-                .dgv_vendas.Rows.Add(rs.Fields(5).Value, rs.Fields(4).Value, CDbl(rs.Fields(2).Value) * CDbl(rs.Fields(3).Value), rs.Fields(1).Value)
+                .dgv_vendas.Rows.Add(rs.Fields(5).Value, rs.Fields(4).Value, rs.Fields(2).Value * rs.Fields(3).Value, rs.Fields(1).Value)
+                rs.MoveNext()
+            Loop
+        End With
+    End Sub
+
+    Sub carregar_contas()
+        sql = "select * from tb_usuarios order by id_usuario asc"
+        rs = db.Execute(sql)
+        With frm_retaguarda.dgv_contas
+            .Rows.Clear()
+            Do While rs.EOF = False
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(4).Value, rs.Fields(3).Value, Nothing, Nothing)
                 rs.MoveNext()
             Loop
         End With

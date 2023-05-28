@@ -98,6 +98,12 @@
     <Compile Include="frm_confirmar.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_nova_conta.Designer.vb">
+      <DependentUpon>frm_nova_conta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_nova_conta.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_retaguarda.Designer.vb">
       <DependentUpon>frm_retaguarda.vb</DependentUpon>
     </Compile>
@@ -146,6 +152,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_confirmar.resx">
       <DependentUpon>frm_confirmar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_nova_conta.resx">
+      <DependentUpon>frm_nova_conta.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_retaguarda.resx">
       <DependentUpon>frm_retaguarda.vb</DependentUpon>
@@ -221,6 +230,12 @@
       <Isolated>False</Isolated>
       <EmbedInteropTypes>True</EmbedInteropTypes>
     </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\olho-aberto.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\olho.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

@@ -1,9 +1,15 @@
 ﻿Public Class frm_confirmar
-    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+    Private Sub txt_corrigir_Click(sender As Object, e As EventArgs) Handles txt_corrigir.Click
+        frm_vendas.txt_cpf.Focus()
         Me.Close()
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub txt_cadastrar_Click(sender As Object, e As EventArgs) Handles txt_cadastrar.Click
+        isUpdate = False
         frm_cadastro.Show()
+    End Sub
+
+    Private Sub frm_confirmar_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
+        frm_vendas.Show()
     End Sub
 End Class

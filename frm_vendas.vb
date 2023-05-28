@@ -41,6 +41,13 @@
             Me.Close()
             'verifica se a qtde foi informada e o cpf foi preechido
         ElseIf txt_qtde.Text <> "" And txt_cpf.Visible And txt_cpf.MaskFull Then
+            sql = "select * from tb_clientes where cpf='" & txt_cpf.Text & "'"
+            rs = db.Execute(sql)
+            If rs.EOF Then
+                frm_confirmar.Show()
+                Me.Close()
+                Exit Sub
+            End If
             'atualiza o estoque de combustivel
             sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") & " where id_comb=" & idCombustivel
             db.Execute(sql)
