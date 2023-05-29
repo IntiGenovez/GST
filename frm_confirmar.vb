@@ -12,4 +12,8 @@
     Private Sub frm_confirmar_FormClosing(sender As Object, e As FormClosingEventArgs) Handles Me.FormClosing
         frm_vendas.Show()
     End Sub
+
+    Private Sub frm_confirmar_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
 End Class

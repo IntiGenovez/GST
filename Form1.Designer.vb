@@ -22,26 +22,18 @@ Partial Class Form1
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Me.btn_venda = New System.Windows.Forms.Button()
         Me.btn_retaguarda = New System.Windows.Forms.Button()
+        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.Label2 = New System.Windows.Forms.Label()
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Arial Rounded MT Bold", 28.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(180, 25)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(124, 55)
-        Me.Label1.TabIndex = 0
-        Me.Label1.Text = "GST"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'btn_venda
         '
         Me.btn_venda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_venda.Location = New System.Drawing.Point(29, 124)
+        Me.btn_venda.Location = New System.Drawing.Point(369, 119)
         Me.btn_venda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_venda.Name = "btn_venda"
         Me.btn_venda.Size = New System.Drawing.Size(207, 42)
@@ -52,7 +44,7 @@ Partial Class Form1
         'btn_retaguarda
         '
         Me.btn_retaguarda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_retaguarda.Location = New System.Drawing.Point(269, 124)
+        Me.btn_retaguarda.Location = New System.Drawing.Point(369, 195)
         Me.btn_retaguarda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_retaguarda.Name = "btn_retaguarda"
         Me.btn_retaguarda.Size = New System.Drawing.Size(207, 42)
@@ -60,23 +52,45 @@ Partial Class Form1
         Me.btn_retaguarda.Text = "Retaguarda"
         Me.btn_retaguarda.UseVisualStyleBackColor = True
         '
+        'PictureBox1
+        '
+        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
+        Me.PictureBox1.Location = New System.Drawing.Point(25, 22)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(274, 282)
+        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(318, 43)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(309, 34)
+        Me.Label2.TabIndex = 6
+        Me.Label2.Text = "Olá, bem-vindo ao sistema GST!"
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(516, 204)
+        Me.ClientSize = New System.Drawing.Size(662, 329)
+        Me.Controls.Add(Me.Label2)
+        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_retaguarda)
         Me.Controls.Add(Me.btn_venda)
-        Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Início"
+        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents Label1 As Label
     Friend WithEvents btn_venda As Button
     Friend WithEvents btn_retaguarda As Button
+    Friend WithEvents PictureBox1 As PictureBox
+    Friend WithEvents Label2 As Label
 End Class

@@ -1,5 +1,8 @@
 ﻿Public Class frm_atualizar_combustivel
     Private Sub frm_atualizar_combustivel_Load(sender As Object, e As EventArgs) Handles Me.Load
+        txt_nome.Text = ""
+        txt_preco.Text = ""
+        txt_qtde.Text = ""
         If isUpdate Then
             idCombustivel = rs.Fields(0).Value
             lbl_combustivel.Text = rs.Fields(1).Value

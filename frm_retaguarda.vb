@@ -1,4 +1,6 @@
 ﻿Public Class frm_retaguarda
+    'atualizar esse form no repo local e subir no github
+    'atualizar o applicationevents
     Private Sub frm_retaguarda_Load(sender As Object, e As EventArgs) Handles Me.Load
         carregar_combustivel()
         carregar_vendas()
@@ -35,7 +37,7 @@
                 isUpdate = True
                 frm_atualizar_combustivel.ShowDialog()
             ElseIf .CurrentRow.Cells(5).Selected And MsgBox("Deseja mesmo deletar o cadastro?" + vbNewLine &
-                                  "Combustível: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") Then
+                                  "Combustível: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
                 sql = "delete * from tb_combustivel where id_comb=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
@@ -79,7 +81,7 @@
                 isUpdate = True
                 frm_nova_conta.ShowDialog()
             ElseIf .CurrentRow.Cells(5).Selected And MsgBox("Deseja mesmo deletar o usuário?" + vbNewLine &
-                                  "Usuário: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") Then
+                                  "Usuário: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
                 sql = "delete * from tb_usuarios where id_usuario=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
@@ -105,11 +107,21 @@
                 isUpdate = True
                 frm_cadastro.ShowDialog()
             ElseIf .CurrentRow.Cells(4).Selected And MsgBox("Deseja mesmo deletar o cliente?" + vbNewLine &
-                                  "Cliente: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") Then
+                                  "Cliente: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
                 sql = "delete * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
             carregar_combustivel()
         End With
+    End Sub
+
+    Private Sub btn_ver_senha_Click(sender As Object, e As EventArgs) Handles btn_ver_senha.Click
+        If Not txt_senha.PasswordChar = "*" Then
+            txt_senha.PasswordChar = "*"
+            btn_ver_senha.Image = My.Resources.olho_aberto
+        Else
+            txt_senha.PasswordChar = ""
+            btn_ver_senha.Image = My.Resources.olho
+        End If
     End Sub
 End Class

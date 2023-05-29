@@ -60,6 +60,7 @@ Partial Class frm_retaguarda
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.btn_ver_senha = New System.Windows.Forms.Button()
         Me.btn_acessar = New System.Windows.Forms.Button()
         Me.txt_senha = New System.Windows.Forms.TextBox()
         Me.txt_usuario = New System.Windows.Forms.TextBox()
@@ -101,7 +102,7 @@ Partial Class frm_retaguarda
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
         Me.TabControl1.Controls.Add(Me.TabPage6)
-        Me.TabControl1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TabControl1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.Location = New System.Drawing.Point(3, 0)
         Me.TabControl1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabControl1.Name = "TabControl1"
@@ -118,11 +119,11 @@ Partial Class frm_retaguarda
         Me.TabPage1.Controls.Add(Me.Label2)
         Me.TabPage1.Controls.Add(Me.Label1)
         Me.TabPage1.Controls.Add(Me.cmb_combustivel)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 33)
         Me.TabPage1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage1.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage1.Size = New System.Drawing.Size(925, 416)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Preços e Estoque"
         Me.TabPage1.UseVisualStyleBackColor = True
@@ -130,7 +131,7 @@ Partial Class frm_retaguarda
         'btn_atualizar
         '
         Me.btn_atualizar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_atualizar.Location = New System.Drawing.Point(193, 290)
+        Me.btn_atualizar.Location = New System.Drawing.Point(118, 208)
         Me.btn_atualizar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_atualizar.Name = "btn_atualizar"
         Me.btn_atualizar.Size = New System.Drawing.Size(187, 42)
@@ -142,7 +143,7 @@ Partial Class frm_retaguarda
         '
         Me.lbl_qtde.AutoSize = True
         Me.lbl_qtde.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_qtde.Location = New System.Drawing.Point(542, 194)
+        Me.lbl_qtde.Location = New System.Drawing.Point(215, 160)
         Me.lbl_qtde.Name = "lbl_qtde"
         Me.lbl_qtde.Size = New System.Drawing.Size(66, 20)
         Me.lbl_qtde.TabIndex = 5
@@ -152,7 +153,7 @@ Partial Class frm_retaguarda
         '
         Me.lbl_preco.AutoSize = True
         Me.lbl_preco.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_preco.Location = New System.Drawing.Point(188, 194)
+        Me.lbl_preco.Location = New System.Drawing.Point(37, 160)
         Me.lbl_preco.Name = "lbl_preco"
         Me.lbl_preco.Size = New System.Drawing.Size(75, 20)
         Me.lbl_preco.TabIndex = 4
@@ -161,30 +162,30 @@ Partial Class frm_retaguarda
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(542, 167)
+        Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(215, 133)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(124, 24)
+        Me.Label3.Size = New System.Drawing.Size(90, 22)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Estoque atual"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(188, 167)
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(37, 133)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(104, 24)
+        Me.Label2.Size = New System.Drawing.Size(79, 22)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Preço atual"
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(188, 42)
+        Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(37, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(216, 24)
+        Me.Label1.Size = New System.Drawing.Size(156, 22)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Selecione o combustível"
         '
@@ -193,7 +194,7 @@ Partial Class frm_retaguarda
         Me.cmb_combustivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_combustivel.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_combustivel.FormattingEnabled = True
-        Me.cmb_combustivel.Location = New System.Drawing.Point(193, 71)
+        Me.cmb_combustivel.Location = New System.Drawing.Point(41, 80)
         Me.cmb_combustivel.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_combustivel.Name = "cmb_combustivel"
         Me.cmb_combustivel.Size = New System.Drawing.Size(264, 28)
@@ -203,11 +204,11 @@ Partial Class frm_retaguarda
         '
         Me.TabPage2.Controls.Add(Me.dgv_clientes)
         Me.TabPage2.Controls.Add(Me.ToolStrip4)
-        Me.TabPage2.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage2.Location = New System.Drawing.Point(4, 33)
         Me.TabPage2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage2.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage2.Size = New System.Drawing.Size(925, 416)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "Clientes"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -226,7 +227,7 @@ Partial Class frm_retaguarda
         Me.dgv_clientes.ReadOnly = True
         Me.dgv_clientes.RowHeadersWidth = 51
         Me.dgv_clientes.RowTemplate.Height = 24
-        Me.dgv_clientes.Size = New System.Drawing.Size(919, 386)
+        Me.dgv_clientes.Size = New System.Drawing.Size(919, 387)
         Me.dgv_clientes.TabIndex = 1
         '
         'Column1
@@ -284,11 +285,11 @@ Partial Class frm_retaguarda
         '
         Me.TabPage3.Controls.Add(Me.dgv_comb)
         Me.TabPage3.Controls.Add(Me.ToolStrip1)
-        Me.TabPage3.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage3.Location = New System.Drawing.Point(4, 33)
         Me.TabPage3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage3.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage3.Size = New System.Drawing.Size(925, 416)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Combustíveis"
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -307,7 +308,7 @@ Partial Class frm_retaguarda
         Me.dgv_comb.ReadOnly = True
         Me.dgv_comb.RowHeadersWidth = 51
         Me.dgv_comb.RowTemplate.Height = 24
-        Me.dgv_comb.Size = New System.Drawing.Size(919, 386)
+        Me.dgv_comb.Size = New System.Drawing.Size(919, 387)
         Me.dgv_comb.TabIndex = 1
         '
         'Column14
@@ -372,11 +373,11 @@ Partial Class frm_retaguarda
         '
         Me.TabPage4.Controls.Add(Me.dgv_vendas)
         Me.TabPage4.Controls.Add(Me.ToolStrip2)
-        Me.TabPage4.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage4.Location = New System.Drawing.Point(4, 33)
         Me.TabPage4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.TabPage4.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage4.Size = New System.Drawing.Size(925, 416)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Vendas"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -395,7 +396,7 @@ Partial Class frm_retaguarda
         Me.dgv_vendas.ReadOnly = True
         Me.dgv_vendas.RowHeadersWidth = 51
         Me.dgv_vendas.RowTemplate.Height = 24
-        Me.dgv_vendas.Size = New System.Drawing.Size(919, 383)
+        Me.dgv_vendas.Size = New System.Drawing.Size(919, 384)
         Me.dgv_vendas.TabIndex = 1
         '
         'Column10
@@ -449,26 +450,37 @@ Partial Class frm_retaguarda
         '
         'TabPage5
         '
+        Me.TabPage5.Controls.Add(Me.btn_ver_senha)
         Me.TabPage5.Controls.Add(Me.btn_acessar)
         Me.TabPage5.Controls.Add(Me.txt_senha)
         Me.TabPage5.Controls.Add(Me.txt_usuario)
         Me.TabPage5.Controls.Add(Me.Label4)
         Me.TabPage5.Controls.Add(Me.Label5)
-        Me.TabPage5.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage5.Location = New System.Drawing.Point(4, 33)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage5.Size = New System.Drawing.Size(925, 416)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Login"
         Me.TabPage5.UseVisualStyleBackColor = True
         '
+        'btn_ver_senha
+        '
+        Me.btn_ver_senha.Image = Global.GST.My.Resources.Resources.olho
+        Me.btn_ver_senha.Location = New System.Drawing.Point(383, 111)
+        Me.btn_ver_senha.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_ver_senha.Name = "btn_ver_senha"
+        Me.btn_ver_senha.Size = New System.Drawing.Size(35, 30)
+        Me.btn_ver_senha.TabIndex = 26
+        Me.btn_ver_senha.UseVisualStyleBackColor = True
+        '
         'btn_acessar
         '
-        Me.btn_acessar.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_acessar.Location = New System.Drawing.Point(254, 216)
+        Me.btn_acessar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btn_acessar.Location = New System.Drawing.Point(66, 170)
         Me.btn_acessar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_acessar.Name = "btn_acessar"
-        Me.btn_acessar.Size = New System.Drawing.Size(432, 36)
+        Me.btn_acessar.Size = New System.Drawing.Size(352, 38)
         Me.btn_acessar.TabIndex = 9
         Me.btn_acessar.Text = "Acessar"
         Me.btn_acessar.UseVisualStyleBackColor = True
@@ -476,16 +488,17 @@ Partial Class frm_retaguarda
         'txt_senha
         '
         Me.txt_senha.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_senha.Location = New System.Drawing.Point(488, 150)
+        Me.txt_senha.Location = New System.Drawing.Point(152, 111)
         Me.txt_senha.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_senha.Name = "txt_senha"
-        Me.txt_senha.Size = New System.Drawing.Size(196, 27)
+        Me.txt_senha.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_senha.Size = New System.Drawing.Size(204, 27)
         Me.txt_senha.TabIndex = 8
         '
         'txt_usuario
         '
         Me.txt_usuario.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_usuario.Location = New System.Drawing.Point(254, 150)
+        Me.txt_usuario.Location = New System.Drawing.Point(152, 54)
         Me.txt_usuario.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_usuario.Name = "txt_usuario"
         Me.txt_usuario.Size = New System.Drawing.Size(204, 27)
@@ -494,20 +507,20 @@ Partial Class frm_retaguarda
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft JhengHei", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(483, 119)
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(62, 110)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 24)
+        Me.Label4.Size = New System.Drawing.Size(51, 24)
         Me.Label4.TabIndex = 6
         Me.Label4.Text = "Senha"
         '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft JhengHei", 10.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(248, 119)
+        Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Location = New System.Drawing.Point(62, 53)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 24)
+        Me.Label5.Size = New System.Drawing.Size(59, 24)
         Me.Label5.TabIndex = 5
         Me.Label5.Text = "Usuário"
         '
@@ -515,10 +528,10 @@ Partial Class frm_retaguarda
         '
         Me.TabPage6.Controls.Add(Me.dgv_contas)
         Me.TabPage6.Controls.Add(Me.ToolStrip3)
-        Me.TabPage6.Location = New System.Drawing.Point(4, 34)
+        Me.TabPage6.Location = New System.Drawing.Point(4, 33)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(925, 415)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage6.Size = New System.Drawing.Size(925, 416)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Contas"
         Me.TabPage6.UseVisualStyleBackColor = True
@@ -536,7 +549,7 @@ Partial Class frm_retaguarda
         Me.dgv_contas.ReadOnly = True
         Me.dgv_contas.RowHeadersWidth = 51
         Me.dgv_contas.RowTemplate.Height = 24
-        Me.dgv_contas.Size = New System.Drawing.Size(919, 384)
+        Me.dgv_contas.Size = New System.Drawing.Size(919, 385)
         Me.dgv_contas.TabIndex = 3
         '
         'Column15
@@ -696,4 +709,5 @@ Partial Class frm_retaguarda
     Friend WithEvents Column22 As DataGridViewTextBoxColumn
     Friend WithEvents Column3 As DataGridViewImageColumn
     Friend WithEvents Column4 As DataGridViewImageColumn
+    Friend WithEvents btn_ver_senha As Button
 End Class
