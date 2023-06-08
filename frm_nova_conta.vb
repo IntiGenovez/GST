@@ -7,8 +7,17 @@
             MsgBox("Senhas não conferem", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
             Exit Sub
         End If
-
-        carregar_contas()
+        sql = "select * from tb_usuarios where usuario='" & txt_nome.Text & "'"
+        rs = db.Execute(sql)
+        If Not rs.EOF Then
+            MsgBox("Já existe um usuário cadastrado com esse nome!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
+        Else
+            sql = "insert into tb_usuarios (usuario, senha, tipo, status) values ('" & txt_nome.Text & "', '" & txt_senha.Text & "', '" & cmb_tipo_conta.Text & "', 1)"
+            db.Execute(sql)
+            MsgBox("Cadastro realizado com sucesso!", MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Sucesso")
+            carregar_contas()
+            Me.Close()
+        End If
     End Sub
 
     Private Sub txt_senha_TextChanged(sender As Object, e As EventArgs) Handles txt_senha.TextChanged

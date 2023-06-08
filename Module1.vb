@@ -13,14 +13,6 @@
             MsgBox("Conexão Falha", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Falha")
         End Try
     End Sub
-    Sub desconctar_banco()
-        Try
-            db.Close()
-        Catch ex As Exception
-            MsgBox("Conexão Falha", MsgBoxStyle.Critical + MsgBoxStyle.OkOnly, "Falha")
-        End Try
-    End Sub
-
     Sub carregar_combustivel()
         'Adiciona os combustíveis do db no cmb
         sql = "select * from tb_combustivel order by nome asc"
@@ -40,24 +32,24 @@
 
     Sub carregar_vendas()
         'Adiciona os combustíveis do db no cmb
-        sql = "select * from tb_vendas order by data asc"
+        sql = "SELECT v.*, c.nome AS nome FROM tb_vendas v INNER JOIN tb_combustivel c ON v.id_comb = c.id_comb order by data asc"
         rs = db.Execute(sql)
         With frm_retaguarda
             .dgv_vendas.Rows.Clear()
             Do While rs.EOF = False
-                .dgv_vendas.Rows.Add(rs.Fields(5).Value, rs.Fields(4).Value, rs.Fields(2).Value * rs.Fields(3).Value, rs.Fields(1).Value)
+                .dgv_vendas.Rows.Add(rs.Fields(5).Value, rs.Fields("nome").Value, rs.Fields(2).Value * rs.Fields(3).Value, rs.Fields(1).Value)
                 rs.MoveNext()
             Loop
         End With
     End Sub
 
     Sub carregar_contas()
-        sql = "select * from tb_usuarios order by id_usuario asc"
+        sql = "SELECT u.*, p.valor_param AS status FROM tb_usuarios u INNER JOIN tb_status p ON u.status = p.id_param order by usuario asc"
         rs = db.Execute(sql)
         With frm_retaguarda.dgv_contas
             .Rows.Clear()
             Do While rs.EOF = False
-                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields(4).Value, rs.Fields(3).Value, Nothing, Nothing)
+                .Rows.Add(rs.Fields(0).Value, rs.Fields(1).Value, rs.Fields("status").Value, rs.Fields(3).Value, Nothing, Nothing, rs.Fields("status").Value)
                 rs.MoveNext()
             Loop
         End With

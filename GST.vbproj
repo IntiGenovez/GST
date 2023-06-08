@@ -238,5 +238,11 @@
   <ItemGroup>
     <None Include="bin\Debug\icons\olho.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\editar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\icons\excluir.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>

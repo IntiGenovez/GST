@@ -18,8 +18,11 @@
             sql = "select * from tb_combustivel where nome='" & combustivelSelecao & "'"
             rs = db.Execute(sql)
             idCombustivel = rs.Fields(0).Value
-            frm_vendas.Show()
-            Me.Close()
+            frm_vendas.ShowDialog()
         End If
+    End Sub
+
+    Private Sub frm_selecao_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Form1.Show()
     End Sub
 End Class

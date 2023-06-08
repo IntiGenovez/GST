@@ -63,7 +63,7 @@ Partial Class frm_vendas
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(36, 147)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(43, 22)
+        Me.Label1.Size = New System.Drawing.Size(44, 23)
         Me.Label1.TabIndex = 2
         Me.Label1.Text = "Valor:"
         '
@@ -71,9 +71,9 @@ Partial Class frm_vendas
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(339, 147)
+        Me.Label2.Location = New System.Drawing.Point(330, 147)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(48, 22)
+        Me.Label2.Size = New System.Drawing.Size(49, 23)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Litros:"
         '
@@ -83,7 +83,7 @@ Partial Class frm_vendas
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(491, 207)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(65, 22)
+        Me.Label3.Size = New System.Drawing.Size(66, 23)
         Me.Label3.TabIndex = 4
         Me.Label3.Text = "Desconto"
         '

@@ -33,10 +33,13 @@
             'atualiza o estoque de combustivel
             sql = "update tb_combustivel set qtde = " & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") & " where id_comb = " & idCombustivel
             db.Execute(sql)
+
             'registra a venda
-            sql = "insert into tb_vendas (data, valor, qtde, tipo_comb) values ('" & DateTime.Now & "', " & txt_valor.Text.Replace(",", ".") & ", " & txt_qtde.Text.Replace(",", ".") & ", '" & combustivelSelecao & "')"
+            sql = "insert into tb_vendas (data, valor, qtde, id_comb, cpf) values ('" & DateTime.Now & "', " &
+                   txt_valor.Text.Replace(",", ".") & ", " & txt_qtde.Text.Replace(",", ".") & ", '" & idCombustivel & "', 'Não informado')"
             db.Execute(sql)
-            MsgBox("Sua venda foi confirmada com sucesso no valor de R$" & txt_valor.Text, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
+            MsgBox("Sua venda foi confirmada com sucesso no valor de R$" &
+                   txt_valor.Text, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
             frm_selecao.Show()
             Me.Close()
             'verifica se a qtde foi informada e o cpf foi preechido
@@ -50,8 +53,8 @@
             End If
 
             If rs.Fields(4).Value > 0 Then
-                If MsgBox("Você possui um desconto de " & rs.Fields(4).Value & "Deseja resgatar agora?",
-                        MsgBoxStyle.Information + MsgBoxStyle.YesNo, "Desconto") Then
+                If MsgBox("Você possui um desconto de " & rs.Fields(4).Value &
+                          "Deseja resgatar agora?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "Desconto") Then
                     lbl_desconto.Text = rs.Fields(4).Value
                 End If
             End If
@@ -62,9 +65,9 @@
             db.Execute(sql)
 
             'registra a venda
-            sql = "insert into tb_vendas (data, valor, qtde, tipo_comb, cpf) values ('" & DateTime.Now &
+            sql = "insert into tb_vendas (data, valor, qtde, id_comb, cpf) values ('" & DateTime.Now &
                   "', " & (txt_valor.Text - lbl_desconto.Text).ToString.Replace(",", ".") &
-                  ", " & txt_qtde.Text.Replace(",", ".") & ", '" & combustivelSelecao &
+                  ", " & txt_qtde.Text.Replace(",", ".") & ", '" & idCombustivel &
                   "', '" & txt_cpf.Text & "')"
             db.Execute(sql)
 
@@ -72,7 +75,8 @@
                   " where cpf='" & txt_cpf.Text & "'"
             db.Execute(sql)
 
-            MsgBox("Sua venda com CPF foi confirmada com sucesso no valor de R$" & (txt_valor.Text * 0.9), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
+            MsgBox("Sua venda com CPF foi confirmada com sucesso no valor de R$" &
+                   (txt_valor.Text * 0.9), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
             frm_selecao.Show()
             Me.Close()
         Else

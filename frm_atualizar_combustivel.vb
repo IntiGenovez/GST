@@ -10,7 +10,7 @@
             lbl_preco.Text = rs.Fields(2).Value
             txt_preco.Text = rs.Fields(2).Value
             lbl_qtde.Text = rs.Fields(3).Value
-            If rs.Fields(4).Value = "Ativo" Then
+            If rs.Fields(4).Value = 1 Then
                 cmb_status.SelectedIndex = 0
             Else
                 cmb_status.SelectedIndex = 1
@@ -40,12 +40,12 @@
                 sql = "update tb_combustivel set nome = '" & txt_nome.Text &
                 "', preco=" & txt_preco.Text &
                 ", qtde=" & novoCombustivel &
-                ", status='" & cmb_status.Text &
+                ", status='" & cmb_status.SelectedIndex + 1 &
                 "' where id_comb = " & idCombustivel
             Else
                 sql = "update tb_combustivel set nome = '" & txt_nome.Text &
                 "', preco=" & txt_preco.Text &
-                ", status='" & cmb_status.Text &
+                ", status='" & cmb_status.SelectedIndex + 1 &
                 "' where id_comb = " & idCombustivel
             End If
         Else
@@ -56,7 +56,7 @@
             sql = "insert into tb_combustivel (nome, preco, qtde, status) values ('" &
                 txt_nome.Text &
                 "', " & txt_preco.Text &
-                ", " & txt_qtde.Text & ", 'Ativo')"
+                ", " & txt_qtde.Text & ", '1')"
         End If
         db.Execute(sql)
         carregar_combustivel()

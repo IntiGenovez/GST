@@ -33,21 +33,10 @@ Partial Class frm_retaguarda
         Me.cmb_combustivel = New System.Windows.Forms.ComboBox()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
         Me.dgv_clientes = New System.Windows.Forms.DataGridView()
-        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column3 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column4 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ToolStrip4 = New System.Windows.Forms.ToolStrip()
         Me.lbl_novo_cliente = New System.Windows.Forms.ToolStripLabel()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.dgv_comb = New System.Windows.Forms.DataGridView()
-        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column8 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column9 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.ToolStrip1 = New System.Windows.Forms.ToolStrip()
         Me.lbl_novo_comb = New System.Windows.Forms.ToolStripLabel()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
@@ -60,7 +49,6 @@ Partial Class frm_retaguarda
         Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
         Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
-        Me.btn_ver_senha = New System.Windows.Forms.Button()
         Me.btn_acessar = New System.Windows.Forms.Button()
         Me.txt_senha = New System.Windows.Forms.TextBox()
         Me.txt_usuario = New System.Windows.Forms.TextBox()
@@ -68,6 +56,22 @@ Partial Class frm_retaguarda
         Me.Label5 = New System.Windows.Forms.Label()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.dgv_contas = New System.Windows.Forms.DataGridView()
+        Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
+        Me.lbl_nova_conta = New System.Windows.Forms.ToolStripLabel()
+        Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.btn_ver_senha = New System.Windows.Forms.Button()
+        Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column5 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column8 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column9 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column22 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column3 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column4 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -75,8 +79,6 @@ Partial Class frm_retaguarda
         Me.Column19 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column20 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.Column21 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
-        Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
-        Me.lbl_nova_conta = New System.Windows.Forms.ToolStripLabel()
         Me.TabControl1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
@@ -165,7 +167,7 @@ Partial Class frm_retaguarda
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(215, 133)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(90, 22)
+        Me.Label3.Size = New System.Drawing.Size(96, 23)
         Me.Label3.TabIndex = 3
         Me.Label3.Text = "Estoque atual"
         '
@@ -175,7 +177,7 @@ Partial Class frm_retaguarda
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(37, 133)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(79, 22)
+        Me.Label2.Size = New System.Drawing.Size(82, 23)
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Preço atual"
         '
@@ -185,7 +187,7 @@ Partial Class frm_retaguarda
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(37, 47)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(156, 22)
+        Me.Label1.Size = New System.Drawing.Size(160, 23)
         Me.Label1.TabIndex = 1
         Me.Label1.Text = "Selecione o combustível"
         '
@@ -229,41 +231,6 @@ Partial Class frm_retaguarda
         Me.dgv_clientes.RowTemplate.Height = 24
         Me.dgv_clientes.Size = New System.Drawing.Size(919, 387)
         Me.dgv_clientes.TabIndex = 1
-        '
-        'Column1
-        '
-        Me.Column1.HeaderText = "Nome"
-        Me.Column1.MinimumWidth = 6
-        Me.Column1.Name = "Column1"
-        Me.Column1.ReadOnly = True
-        '
-        'Column2
-        '
-        Me.Column2.HeaderText = "E-mail"
-        Me.Column2.MinimumWidth = 6
-        Me.Column2.Name = "Column2"
-        Me.Column2.ReadOnly = True
-        '
-        'Column22
-        '
-        Me.Column22.HeaderText = "Fidelidade"
-        Me.Column22.MinimumWidth = 6
-        Me.Column22.Name = "Column22"
-        Me.Column22.ReadOnly = True
-        '
-        'Column3
-        '
-        Me.Column3.HeaderText = "Editar"
-        Me.Column3.MinimumWidth = 6
-        Me.Column3.Name = "Column3"
-        Me.Column3.ReadOnly = True
-        '
-        'Column4
-        '
-        Me.Column4.HeaderText = "Excluir"
-        Me.Column4.MinimumWidth = 6
-        Me.Column4.Name = "Column4"
-        Me.Column4.ReadOnly = True
         '
         'ToolStrip4
         '
@@ -310,48 +277,6 @@ Partial Class frm_retaguarda
         Me.dgv_comb.RowTemplate.Height = 24
         Me.dgv_comb.Size = New System.Drawing.Size(919, 387)
         Me.dgv_comb.TabIndex = 1
-        '
-        'Column14
-        '
-        Me.Column14.HeaderText = "Código"
-        Me.Column14.MinimumWidth = 6
-        Me.Column14.Name = "Column14"
-        Me.Column14.ReadOnly = True
-        '
-        'Column5
-        '
-        Me.Column5.HeaderText = "Nome"
-        Me.Column5.MinimumWidth = 6
-        Me.Column5.Name = "Column5"
-        Me.Column5.ReadOnly = True
-        '
-        'Column6
-        '
-        Me.Column6.HeaderText = "Preço"
-        Me.Column6.MinimumWidth = 6
-        Me.Column6.Name = "Column6"
-        Me.Column6.ReadOnly = True
-        '
-        'Column7
-        '
-        Me.Column7.HeaderText = "Estoque"
-        Me.Column7.MinimumWidth = 6
-        Me.Column7.Name = "Column7"
-        Me.Column7.ReadOnly = True
-        '
-        'Column8
-        '
-        Me.Column8.HeaderText = "Editar"
-        Me.Column8.MinimumWidth = 6
-        Me.Column8.Name = "Column8"
-        Me.Column8.ReadOnly = True
-        '
-        'Column9
-        '
-        Me.Column9.HeaderText = "Excluir"
-        Me.Column9.MinimumWidth = 6
-        Me.Column9.Name = "Column9"
-        Me.Column9.ReadOnly = True
         '
         'ToolStrip1
         '
@@ -458,21 +383,11 @@ Partial Class frm_retaguarda
         Me.TabPage5.Controls.Add(Me.Label5)
         Me.TabPage5.Location = New System.Drawing.Point(4, 33)
         Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage5.Size = New System.Drawing.Size(925, 416)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Login"
         Me.TabPage5.UseVisualStyleBackColor = True
-        '
-        'btn_ver_senha
-        '
-        Me.btn_ver_senha.Image = Global.GST.My.Resources.Resources.olho
-        Me.btn_ver_senha.Location = New System.Drawing.Point(383, 111)
-        Me.btn_ver_senha.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.btn_ver_senha.Name = "btn_ver_senha"
-        Me.btn_ver_senha.Size = New System.Drawing.Size(35, 30)
-        Me.btn_ver_senha.TabIndex = 26
-        Me.btn_ver_senha.UseVisualStyleBackColor = True
         '
         'btn_acessar
         '
@@ -530,7 +445,7 @@ Partial Class frm_retaguarda
         Me.TabPage6.Controls.Add(Me.ToolStrip3)
         Me.TabPage6.Location = New System.Drawing.Point(4, 33)
         Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3, 3, 3, 3)
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
         Me.TabPage6.Size = New System.Drawing.Size(925, 416)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Contas"
@@ -551,6 +466,129 @@ Partial Class frm_retaguarda
         Me.dgv_contas.RowTemplate.Height = 24
         Me.dgv_contas.Size = New System.Drawing.Size(919, 385)
         Me.dgv_contas.TabIndex = 3
+        '
+        'ToolStrip3
+        '
+        Me.ToolStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
+        Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbl_nova_conta})
+        Me.ToolStrip3.Location = New System.Drawing.Point(3, 3)
+        Me.ToolStrip3.Name = "ToolStrip3"
+        Me.ToolStrip3.Size = New System.Drawing.Size(919, 25)
+        Me.ToolStrip3.TabIndex = 1
+        Me.ToolStrip3.Text = "ToolStrip3"
+        '
+        'lbl_nova_conta
+        '
+        Me.lbl_nova_conta.Name = "lbl_nova_conta"
+        Me.lbl_nova_conta.Size = New System.Drawing.Size(85, 22)
+        Me.lbl_nova_conta.Text = "Nova conta"
+        '
+        'DataGridViewImageColumn1
+        '
+        Me.DataGridViewImageColumn1.HeaderText = "Editar"
+        Me.DataGridViewImageColumn1.Image = Global.GST.My.Resources.Resources.editar
+        Me.DataGridViewImageColumn1.MinimumWidth = 6
+        Me.DataGridViewImageColumn1.Name = "DataGridViewImageColumn1"
+        Me.DataGridViewImageColumn1.Width = 124
+        '
+        'DataGridViewImageColumn2
+        '
+        Me.DataGridViewImageColumn2.HeaderText = "Excluir"
+        Me.DataGridViewImageColumn2.Image = Global.GST.My.Resources.Resources.excluir
+        Me.DataGridViewImageColumn2.MinimumWidth = 6
+        Me.DataGridViewImageColumn2.Name = "DataGridViewImageColumn2"
+        Me.DataGridViewImageColumn2.Width = 123
+        '
+        'btn_ver_senha
+        '
+        Me.btn_ver_senha.Image = Global.GST.My.Resources.Resources.olho
+        Me.btn_ver_senha.Location = New System.Drawing.Point(383, 111)
+        Me.btn_ver_senha.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.btn_ver_senha.Name = "btn_ver_senha"
+        Me.btn_ver_senha.Size = New System.Drawing.Size(35, 30)
+        Me.btn_ver_senha.TabIndex = 26
+        Me.btn_ver_senha.UseVisualStyleBackColor = True
+        '
+        'Column14
+        '
+        Me.Column14.HeaderText = "Código"
+        Me.Column14.MinimumWidth = 6
+        Me.Column14.Name = "Column14"
+        Me.Column14.ReadOnly = True
+        '
+        'Column5
+        '
+        Me.Column5.HeaderText = "Nome"
+        Me.Column5.MinimumWidth = 6
+        Me.Column5.Name = "Column5"
+        Me.Column5.ReadOnly = True
+        '
+        'Column6
+        '
+        Me.Column6.HeaderText = "Preço"
+        Me.Column6.MinimumWidth = 6
+        Me.Column6.Name = "Column6"
+        Me.Column6.ReadOnly = True
+        '
+        'Column7
+        '
+        Me.Column7.HeaderText = "Estoque"
+        Me.Column7.MinimumWidth = 6
+        Me.Column7.Name = "Column7"
+        Me.Column7.ReadOnly = True
+        '
+        'Column8
+        '
+        Me.Column8.HeaderText = "Editar"
+        Me.Column8.Image = Global.GST.My.Resources.Resources.editar
+        Me.Column8.MinimumWidth = 6
+        Me.Column8.Name = "Column8"
+        Me.Column8.ReadOnly = True
+        '
+        'Column9
+        '
+        Me.Column9.HeaderText = "Excluir"
+        Me.Column9.Image = Global.GST.My.Resources.Resources.excluir
+        Me.Column9.MinimumWidth = 6
+        Me.Column9.Name = "Column9"
+        Me.Column9.ReadOnly = True
+        '
+        'Column1
+        '
+        Me.Column1.HeaderText = "Nome"
+        Me.Column1.MinimumWidth = 6
+        Me.Column1.Name = "Column1"
+        Me.Column1.ReadOnly = True
+        '
+        'Column2
+        '
+        Me.Column2.HeaderText = "E-mail"
+        Me.Column2.MinimumWidth = 6
+        Me.Column2.Name = "Column2"
+        Me.Column2.ReadOnly = True
+        '
+        'Column22
+        '
+        Me.Column22.HeaderText = "Fidelidade"
+        Me.Column22.MinimumWidth = 6
+        Me.Column22.Name = "Column22"
+        Me.Column22.ReadOnly = True
+        '
+        'Column3
+        '
+        Me.Column3.HeaderText = "Editar"
+        Me.Column3.Image = Global.GST.My.Resources.Resources.editar
+        Me.Column3.MinimumWidth = 6
+        Me.Column3.Name = "Column3"
+        Me.Column3.ReadOnly = True
+        '
+        'Column4
+        '
+        Me.Column4.HeaderText = "Excluir"
+        Me.Column4.Image = Global.GST.My.Resources.Resources.excluir
+        Me.Column4.MinimumWidth = 6
+        Me.Column4.Name = "Column4"
+        Me.Column4.ReadOnly = True
         '
         'Column15
         '
@@ -583,6 +621,7 @@ Partial Class frm_retaguarda
         'Column19
         '
         Me.Column19.HeaderText = "Editar"
+        Me.Column19.Image = Global.GST.My.Resources.Resources.editar
         Me.Column19.MinimumWidth = 6
         Me.Column19.Name = "Column19"
         Me.Column19.ReadOnly = True
@@ -590,32 +629,19 @@ Partial Class frm_retaguarda
         'Column20
         '
         Me.Column20.HeaderText = "Excluir"
+        Me.Column20.Image = Global.GST.My.Resources.Resources.excluir
         Me.Column20.MinimumWidth = 6
         Me.Column20.Name = "Column20"
         Me.Column20.ReadOnly = True
         '
         'Column21
         '
+        Me.Column21.FalseValue = "Inativo"
         Me.Column21.HeaderText = "Bloquear"
         Me.Column21.MinimumWidth = 6
         Me.Column21.Name = "Column21"
         Me.Column21.ReadOnly = True
-        '
-        'ToolStrip3
-        '
-        Me.ToolStrip3.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip3.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.lbl_nova_conta})
-        Me.ToolStrip3.Location = New System.Drawing.Point(3, 3)
-        Me.ToolStrip3.Name = "ToolStrip3"
-        Me.ToolStrip3.Size = New System.Drawing.Size(919, 25)
-        Me.ToolStrip3.TabIndex = 1
-        Me.ToolStrip3.Text = "ToolStrip3"
-        '
-        'lbl_nova_conta
-        '
-        Me.lbl_nova_conta.Name = "lbl_nova_conta"
-        Me.lbl_nova_conta.Size = New System.Drawing.Size(85, 22)
-        Me.lbl_nova_conta.Text = "Nova conta"
+        Me.Column21.TrueValue = "Ativo"
         '
         'frm_retaguarda
         '
@@ -682,32 +708,34 @@ Partial Class frm_retaguarda
     Friend WithEvents txt_usuario As TextBox
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents dgv_contas As DataGridView
+    Friend WithEvents ToolStrip3 As ToolStrip
+    Friend WithEvents lbl_nova_conta As ToolStripLabel
+    Friend WithEvents ToolStrip1 As ToolStrip
+    Friend WithEvents lbl_novo_comb As ToolStripLabel
+    Friend WithEvents ToolStrip4 As ToolStrip
+    Friend WithEvents lbl_novo_cliente As ToolStripLabel
+    Friend WithEvents dgv_clientes As DataGridView
+    Friend WithEvents btn_ver_senha As Button
+    Friend WithEvents Column1 As DataGridViewTextBoxColumn
+    Friend WithEvents Column2 As DataGridViewTextBoxColumn
+    Friend WithEvents Column22 As DataGridViewTextBoxColumn
+    Friend WithEvents Column3 As DataGridViewImageColumn
+    Friend WithEvents Column4 As DataGridViewImageColumn
     Friend WithEvents Column14 As DataGridViewTextBoxColumn
     Friend WithEvents Column5 As DataGridViewTextBoxColumn
     Friend WithEvents Column6 As DataGridViewTextBoxColumn
     Friend WithEvents Column7 As DataGridViewTextBoxColumn
     Friend WithEvents Column8 As DataGridViewImageColumn
     Friend WithEvents Column9 As DataGridViewImageColumn
-    Friend WithEvents TabPage6 As TabPage
-    Friend WithEvents dgv_contas As DataGridView
+    Friend WithEvents DataGridViewImageColumn1 As DataGridViewImageColumn
+    Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents Column15 As DataGridViewTextBoxColumn
     Friend WithEvents Column16 As DataGridViewTextBoxColumn
     Friend WithEvents Column17 As DataGridViewTextBoxColumn
     Friend WithEvents Column18 As DataGridViewTextBoxColumn
     Friend WithEvents Column19 As DataGridViewImageColumn
     Friend WithEvents Column20 As DataGridViewImageColumn
-    Friend WithEvents ToolStrip3 As ToolStrip
-    Friend WithEvents lbl_nova_conta As ToolStripLabel
     Friend WithEvents Column21 As DataGridViewCheckBoxColumn
-    Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents lbl_novo_comb As ToolStripLabel
-    Friend WithEvents ToolStrip4 As ToolStrip
-    Friend WithEvents lbl_novo_cliente As ToolStripLabel
-    Friend WithEvents dgv_clientes As DataGridView
-    Friend WithEvents Column1 As DataGridViewTextBoxColumn
-    Friend WithEvents Column2 As DataGridViewTextBoxColumn
-    Friend WithEvents Column22 As DataGridViewTextBoxColumn
-    Friend WithEvents Column3 As DataGridViewImageColumn
-    Friend WithEvents Column4 As DataGridViewImageColumn
-    Friend WithEvents btn_ver_senha As Button
 End Class

@@ -1,6 +1,4 @@
 ﻿Public Class frm_retaguarda
-    'atualizar esse form no repo local e subir no github
-    'atualizar o applicationevents
     Private Sub frm_retaguarda_Load(sender As Object, e As EventArgs) Handles Me.Load
         carregar_combustivel()
         carregar_vendas()
@@ -38,6 +36,12 @@
                 frm_atualizar_combustivel.ShowDialog()
             ElseIf .CurrentRow.Cells(5).Selected And MsgBox("Deseja mesmo deletar o cadastro?" + vbNewLine &
                                   "Combustível: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
+                sql = "select * from tb_vendas where id_comb='" & .CurrentRow.Cells(0).Value & "'"
+                rs = db.Execute(sql)
+                If Not rs.EOF Then
+                    MsgBox("Não é possível deletar o combustível pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "AVISO")
+                    Exit Sub
+                End If
                 sql = "delete * from tb_combustivel where id_comb=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
@@ -46,13 +50,13 @@
     End Sub
 
     Private Sub btn_acessar_Click(sender As Object, e As EventArgs) Handles btn_acessar.Click
-        sql = "select * from tb_usuarios where usuario ='" & txt_usuario.Text & "' and senha='" & txt_senha.Text & "'"
+        sql = "SELECT * FROM tb_usuarios WHERE usuario = '" & txt_usuario.Text & "' AND senha = '" & txt_senha.Text & "'"
         rs = db.Execute(sql)
         If rs.EOF Then
             MsgBox("Usuário ou senha não existe", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
-        ElseIf rs.Fields(4).Value = "Bloqueado" Then
+        ElseIf rs.Fields(4).Value = 2 Then
             MsgBox("Seu usuário foi bloqueado pelo administrador", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "BLOQUEADO")
-        ElseIf rs.Fields(3).Value = "Administrador" Then
+        ElseIf rs.Fields("tipo").Value = "Administrador" Then
             TabControl1.TabPages.Add(TabPage1)
             TabControl1.TabPages.Add(TabPage2)
             TabControl1.TabPages.Add(TabPage3)
@@ -75,17 +79,22 @@
 
     Private Sub dgv_contas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_contas.CellContentClick
         With dgv_contas
-            sql = "select * from tb_usuarios where id_usuario=" & .CurrentRow.Cells(0).Value
+            sql = "SELECT u.*, p.valor_param AS status FROM tb_usuarios u INNER JOIN tb_status p ON u.status = p.id_param " &
+                   "WHERE u.id_usuario =" & .CurrentRow.Cells(0).Value
             rs = db.Execute(sql)
             If .CurrentRow.Cells(4).Selected Then
                 isUpdate = True
                 frm_nova_conta.ShowDialog()
+            ElseIf .CurrentRow.Cells(6).Selected Then
+                sql = "update tb_usuarios set status = " &
+                      "switch(status=1, 2, status = 2, 1) where id_usuario=" & .CurrentRow.Cells(0).Value
+                db.Execute(sql)
             ElseIf .CurrentRow.Cells(5).Selected And MsgBox("Deseja mesmo deletar o usuário?" + vbNewLine &
                                   "Usuário: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
                 sql = "delete * from tb_usuarios where id_usuario=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
-            carregar_combustivel()
+            carregar_contas()
         End With
     End Sub
 
@@ -108,6 +117,12 @@
                 frm_cadastro.ShowDialog()
             ElseIf .CurrentRow.Cells(4).Selected And MsgBox("Deseja mesmo deletar o cliente?" + vbNewLine &
                                   "Cliente: " & rs.Fields(1).Value, MsgBoxStyle.Question + MsgBoxStyle.YesNo, "AVISO") = vbYes Then
+                sql = "select * from tb_vendas where cpf='" & rs.Fields(0).Value & "'"
+                rs = db.Execute(sql)
+                If Not rs.EOF Then
+                    MsgBox("Não é possível deletar o cliente pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "AVISO")
+                    Exit Sub
+                End If
                 sql = "delete * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
                 db.Execute(sql)
             End If
@@ -123,5 +138,9 @@
             txt_senha.PasswordChar = ""
             btn_ver_senha.Image = My.Resources.olho
         End If
+    End Sub
+
+    Private Sub dgv_vendas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_vendas.CellContentClick
+
     End Sub
 End Class
