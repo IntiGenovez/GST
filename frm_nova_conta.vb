@@ -1,6 +1,6 @@
 ﻿Public Class frm_nova_conta
     Private Sub btn_cadastrar_Click(sender As Object, e As EventArgs) Handles btn_cadastrar.Click
-        If txt_nome.Text = "" Or txt_senha.Text = "" Or cmb_tipo_conta.SelectedItem = "" Then
+        If txt_nome.Text = "" Or txt_senha.Text = "" Or cmb_tipo_conta.SelectedItem = "" Or Not txt_fone.MaskFull Or txt_key.text = "" Then
             MsgBox("Preencha todos os campos antes de prosseguir", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
             Exit Sub
         ElseIf lbl_senhas_diferentes.Visible Then

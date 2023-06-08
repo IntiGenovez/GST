@@ -105,6 +105,12 @@
     <Compile Include="frm_nova_conta.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="frm_relatorios.Designer.vb">
+      <DependentUpon>frm_relatorios.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frm_relatorios.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="frm_retaguarda.Designer.vb">
       <DependentUpon>frm_retaguarda.vb</DependentUpon>
     </Compile>
@@ -156,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frm_nova_conta.resx">
       <DependentUpon>frm_nova_conta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frm_relatorios.resx">
+      <DependentUpon>frm_relatorios.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frm_retaguarda.resx">
       <DependentUpon>frm_retaguarda.vb</DependentUpon>

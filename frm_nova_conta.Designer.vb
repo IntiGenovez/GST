@@ -36,6 +36,10 @@ Partial Class frm_nova_conta
         Me.Label3 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.txt_fone = New System.Windows.Forms.MaskedTextBox()
+        Me.txt_key = New System.Windows.Forms.TextBox()
+        Me.Label4 = New System.Windows.Forms.Label()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -45,7 +49,7 @@ Partial Class frm_nova_conta
         Me.lbl_senhas_diferentes.ForeColor = System.Drawing.Color.Red
         Me.lbl_senhas_diferentes.Location = New System.Drawing.Point(398, 242)
         Me.lbl_senhas_diferentes.Name = "lbl_senhas_diferentes"
-        Me.lbl_senhas_diferentes.Size = New System.Drawing.Size(195, 16)
+        Me.lbl_senhas_diferentes.Size = New System.Drawing.Size(201, 17)
         Me.lbl_senhas_diferentes.TabIndex = 26
         Me.lbl_senhas_diferentes.Text = "AS SENHAS NÃO CONFEREM"
         Me.lbl_senhas_diferentes.Visible = False
@@ -77,7 +81,7 @@ Partial Class frm_nova_conta
         Me.cmb_tipo_conta.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_tipo_conta.FormattingEnabled = True
         Me.cmb_tipo_conta.Items.AddRange(New Object() {"Administrador", "Usuário"})
-        Me.cmb_tipo_conta.Location = New System.Drawing.Point(136, 270)
+        Me.cmb_tipo_conta.Location = New System.Drawing.Point(267, 331)
         Me.cmb_tipo_conta.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_tipo_conta.Name = "cmb_tipo_conta"
         Me.cmb_tipo_conta.Size = New System.Drawing.Size(126, 28)
@@ -116,9 +120,9 @@ Partial Class frm_nova_conta
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(30, 270)
+        Me.Label7.Location = New System.Drawing.Point(161, 331)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(91, 22)
+        Me.Label7.Size = New System.Drawing.Size(95, 23)
         Me.Label7.TabIndex = 18
         Me.Label7.Text = "Tipo de Conta"
         '
@@ -128,7 +132,7 @@ Partial Class frm_nova_conta
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(263, 200)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(114, 22)
+        Me.Label6.Size = New System.Drawing.Size(117, 23)
         Me.Label6.TabIndex = 17
         Me.Label6.Text = "Confirmar Senha"
         '
@@ -138,7 +142,7 @@ Partial Class frm_nova_conta
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(30, 200)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(48, 22)
+        Me.Label5.Size = New System.Drawing.Size(49, 23)
         Me.Label5.TabIndex = 16
         Me.Label5.Text = "Senha"
         '
@@ -148,7 +152,7 @@ Partial Class frm_nova_conta
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(30, 144)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(109, 22)
+        Me.Label3.Size = New System.Drawing.Size(115, 23)
         Me.Label3.TabIndex = 14
         Me.Label3.Text = "Nome de Usuário"
         '
@@ -172,11 +176,54 @@ Partial Class frm_nova_conta
         Me.Label1.TabIndex = 27
         Me.Label1.Text = "CADASTRO DE USUÁRIO:"
         '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Location = New System.Drawing.Point(30, 268)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(61, 23)
+        Me.Label2.TabIndex = 29
+        Me.Label2.Text = "Telefone"
+        '
+        'txt_fone
+        '
+        Me.txt_fone.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_fone.Location = New System.Drawing.Point(116, 268)
+        Me.txt_fone.Mask = "(99) 00000-0000"
+        Me.txt_fone.Name = "txt_fone"
+        Me.txt_fone.Size = New System.Drawing.Size(133, 27)
+        Me.txt_fone.TabIndex = 30
+        '
+        'txt_key
+        '
+        Me.txt_key.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_key.Location = New System.Drawing.Point(338, 268)
+        Me.txt_key.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.txt_key.Name = "txt_key"
+        Me.txt_key.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
+        Me.txt_key.Size = New System.Drawing.Size(133, 27)
+        Me.txt_key.TabIndex = 32
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(300, 268)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(32, 23)
+        Me.Label4.TabIndex = 31
+        Me.Label4.Text = "Key"
+        '
         'frm_nova_conta
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(634, 405)
+        Me.Controls.Add(Me.txt_key)
+        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.txt_fone)
+        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.lbl_senhas_diferentes)
@@ -211,4 +258,8 @@ Partial Class frm_nova_conta
     Friend WithEvents Label3 As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents txt_fone As MaskedTextBox
+    Friend WithEvents txt_key As TextBox
+    Friend WithEvents Label4 As Label
 End Class

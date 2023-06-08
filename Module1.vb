@@ -5,6 +5,8 @@
     Public db As New ADODB.Connection
     Public rs As New ADODB.Recordset
     Public dir_banco = Application.StartupPath & "\db\gstdb.mdb"
+    Public app As New Microsoft.Office.Interop.Access.Application
+
     Sub conectar_banco()
         Try
             db = CreateObject("ADODB.Connection")

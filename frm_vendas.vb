@@ -31,12 +31,14 @@
         'verifica se a qtde foi informada e o cpf não foi
         If txt_qtde.Text <> "" And Not txt_cpf.Visible Then
             'atualiza o estoque de combustivel
-            sql = "update tb_combustivel set qtde = " & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") & " where id_comb = " & idCombustivel
+            sql = "update tb_combustivel set qtde = " & (rs.Fields(3).Value - txt_qtde.Text).ToString().Replace(",", ".") &
+                  " where id_comb = " & idCombustivel
             db.Execute(sql)
 
             'registra a venda
             sql = "insert into tb_vendas (data, valor, qtde, id_comb, cpf) values ('" & DateTime.Now & "', " &
-                   txt_valor.Text.Replace(",", ".") & ", " & txt_qtde.Text.Replace(",", ".") & ", '" & idCombustivel & "', 'Não informado')"
+                   txt_valor.Text.Replace(",", ".") & ", " & txt_qtde.Text.Replace(",", ".") & ", '" & idCombustivel &
+                   "', 'Não informado')"
             db.Execute(sql)
             MsgBox("Sua venda foi confirmada com sucesso no valor de R$" &
                    txt_valor.Text, MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")

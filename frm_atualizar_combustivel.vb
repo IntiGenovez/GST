@@ -20,6 +20,9 @@
             cmb_tipo.SelectedIndex = 1
             cmb_status.Enabled = False
             cmb_status.SelectedIndex = 0
+            lbl_combustivel.Text = ""
+            lbl_preco.Text = ""
+            lbl_qtde.Text = ""
         End If
     End Sub
 

@@ -8,7 +8,11 @@
 
     Partial Friend Class MyApplication
         Private Sub MyApplication_Shutdown(sender As Object, e As EventArgs) Handles Me.Shutdown
-            db.Close()
+            Try
+                db.Close()
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
         End Sub
     End Class
 End Namespace

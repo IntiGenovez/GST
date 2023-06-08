@@ -1,4 +1,6 @@
-﻿Public Class frm_retaguarda
+﻿Imports System.Net.Http
+
+Public Class frm_retaguarda
     Private Sub frm_retaguarda_Load(sender As Object, e As EventArgs) Handles Me.Load
         carregar_combustivel()
         carregar_vendas()
@@ -140,7 +142,24 @@
         End If
     End Sub
 
-    Private Sub dgv_vendas_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_vendas.CellContentClick
+    Private Sub frm_retaguarda_FormClosed(sender As Object, e As FormClosedEventArgs) Handles Me.FormClosed
+        Form1.Show()
+    End Sub
 
+    Private Sub lbl_recuperar_LinkClicked(sender As Object, e As LinkLabelLinkClickedEventArgs) Handles lbl_recuperar.LinkClicked
+        sql = "select * from tb_usuarios where usuario = '" & InputBox("Informe o seu usuário...", "Recuperação") & "'"
+        rs = db.Execute(sql)
+        If Not rs.EOF Then
+            Dim client As New HttpClient()
+            Dim uri As New Uri("https://api.callmebot.com/whatsapp.php?phone=+" & rs.Fields(5).Value & "&text=Prezado+" & rs.Fields(1).Value & ",+sua+senha+é+" & rs.Fields(2).Value & "&apikey=" & rs.Fields(6).Value)
+            client.GetAsync(uri)
+            MsgBox("Você recebeu uma mensagem de recuperação, verifique sua caixa de entrada!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
+        Else
+            MsgBox("A conta informada não existe!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
+        End If
+    End Sub
+
+    Private Sub btn_relat_Click(sender As Object, e As EventArgs) Handles btn_relat.Click
+        frm_relatorios.ShowDialog()
     End Sub
 End Class
