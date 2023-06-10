@@ -69,7 +69,7 @@ Partial Class frm_relatorios
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.cmb_relat)
         Me.Name = "frm_relatorios"
-        Me.Text = "frm_relatorios"
+        Me.Text = "Relatórios"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

@@ -43,7 +43,7 @@ Partial Class frm_cadastro
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(32, 134)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(46, 22)
+        Me.Label1.Size = New System.Drawing.Size(47, 23)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Nome:"
         '
@@ -53,7 +53,7 @@ Partial Class frm_cadastro
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(32, 261)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(46, 22)
+        Me.Label2.Size = New System.Drawing.Size(48, 23)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Email:"
         '
@@ -63,7 +63,7 @@ Partial Class frm_cadastro
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(32, 196)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(63, 22)
+        Me.Label6.Size = New System.Drawing.Size(64, 23)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "Telefone:"
         '
@@ -111,7 +111,7 @@ Partial Class frm_cadastro
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(318, 134)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(35, 22)
+        Me.Label3.Size = New System.Drawing.Size(35, 23)
         Me.Label3.TabIndex = 17
         Me.Label3.Text = "CPF:"
         '
@@ -162,7 +162,7 @@ Partial Class frm_cadastro
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_cadastro"
-        Me.Text = "frm_cadastro"
+        Me.Text = "Cadastrar Cliente"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

@@ -94,7 +94,7 @@ Partial Class frm_selecao
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_selecao"
-        Me.Text = "frm_selecao"
+        Me.Text = "Seleção"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

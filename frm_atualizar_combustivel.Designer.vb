@@ -59,7 +59,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(39, 208)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(82, 22)
+        Me.Label2.Size = New System.Drawing.Size(85, 23)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "Preço atual:"
         '
@@ -69,7 +69,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(39, 284)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(106, 22)
+        Me.Label3.Size = New System.Drawing.Size(110, 23)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Atualizar Preço:"
         '
@@ -79,7 +79,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(341, 208)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(93, 22)
+        Me.Label4.Size = New System.Drawing.Size(99, 23)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Estoque atual:"
         '
@@ -119,7 +119,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label5.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(41, 135)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(46, 22)
+        Me.Label5.Size = New System.Drawing.Size(47, 23)
         Me.Label5.TabIndex = 7
         Me.Label5.Text = "Nome:"
         '
@@ -138,7 +138,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(41, 427)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(51, 22)
+        Me.Label6.Size = New System.Drawing.Size(54, 23)
         Me.Label6.TabIndex = 9
         Me.Label6.Text = "Status:"
         '
@@ -169,7 +169,7 @@ Partial Class frm_atualizar_combustivel
         Me.lbl_combustivel.AutoSize = True
         Me.lbl_combustivel.Location = New System.Drawing.Point(464, 140)
         Me.lbl_combustivel.Name = "lbl_combustivel"
-        Me.lbl_combustivel.Size = New System.Drawing.Size(100, 16)
+        Me.lbl_combustivel.Size = New System.Drawing.Size(104, 17)
         Me.lbl_combustivel.TabIndex = 12
         Me.lbl_combustivel.Text = "lbl_combustivel"
         '
@@ -178,7 +178,7 @@ Partial Class frm_atualizar_combustivel
         Me.lbl_preco.AutoSize = True
         Me.lbl_preco.Location = New System.Drawing.Point(148, 213)
         Me.lbl_preco.Name = "lbl_preco"
-        Me.lbl_preco.Size = New System.Drawing.Size(63, 16)
+        Me.lbl_preco.Size = New System.Drawing.Size(66, 17)
         Me.lbl_preco.TabIndex = 13
         Me.lbl_preco.Text = "lbl_preco"
         '
@@ -187,7 +187,7 @@ Partial Class frm_atualizar_combustivel
         Me.lbl_qtde.AutoSize = True
         Me.lbl_qtde.Location = New System.Drawing.Point(464, 213)
         Me.lbl_qtde.Name = "lbl_qtde"
-        Me.lbl_qtde.Size = New System.Drawing.Size(55, 16)
+        Me.lbl_qtde.Size = New System.Drawing.Size(58, 17)
         Me.lbl_qtde.TabIndex = 14
         Me.lbl_qtde.Text = "lbl_qtde"
         '
@@ -207,7 +207,7 @@ Partial Class frm_atualizar_combustivel
         Me.Label7.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(341, 284)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(117, 22)
+        Me.Label7.Size = New System.Drawing.Size(124, 23)
         Me.Label7.TabIndex = 16
         Me.Label7.Text = "Atualizar Estoque:"
         '
@@ -235,7 +235,7 @@ Partial Class frm_atualizar_combustivel
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_atualizar_combustivel"
-        Me.Text = "frm_atualizar_combustivel"
+        Me.Text = "Atualizar Combustível"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

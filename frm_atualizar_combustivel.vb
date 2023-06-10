@@ -23,6 +23,7 @@
             lbl_combustivel.Text = ""
             lbl_preco.Text = ""
             lbl_qtde.Text = ""
+            Me.Text = "Cadastrar combustível"
         End If
     End Sub
 

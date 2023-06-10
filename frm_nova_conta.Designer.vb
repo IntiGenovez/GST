@@ -238,7 +238,7 @@ Partial Class frm_nova_conta
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label3)
         Me.Name = "frm_nova_conta"
-        Me.Text = "frm_nova_conta"
+        Me.Text = "Nova conta"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

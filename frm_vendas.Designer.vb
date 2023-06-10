@@ -188,7 +188,7 @@ Partial Class frm_vendas
         Me.Controls.Add(Me.txt_valor)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_vendas"
-        Me.Text = "frm_vendas"
+        Me.Text = "GST"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

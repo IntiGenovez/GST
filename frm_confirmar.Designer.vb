@@ -34,7 +34,7 @@ Partial Class frm_confirmar
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(51, 41)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(458, 41)
+        Me.Label1.Size = New System.Drawing.Size(444, 40)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "Seu CPF não consta no sistema :("
         '
@@ -66,7 +66,7 @@ Partial Class frm_confirmar
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiLight SemiConde", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(53, 92)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(245, 28)
+        Me.Label2.Size = New System.Drawing.Size(253, 29)
         Me.Label2.TabIndex = 3
         Me.Label2.Text = "Gostaria de se cadastrar?"
         '
@@ -81,7 +81,7 @@ Partial Class frm_confirmar
         Me.Controls.Add(Me.Label1)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_confirmar"
-        Me.Text = "frm_confirmar"
+        Me.Text = "CPF não cadastrado"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

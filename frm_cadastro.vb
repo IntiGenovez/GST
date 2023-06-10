@@ -8,6 +8,7 @@
             txt_telefone.Text = rs.Fields(3).Value
             txt_cpf.Text = rs.Fields(0).Value
             txt_cpf.Enabled = False
+            Me.Text = "Atualizar Cliente"
         End If
     End Sub
 
