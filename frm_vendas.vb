@@ -62,18 +62,18 @@
             End If
 
             'atualiza o estoque de combustivel
-            sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString.Replace(",", ".") &
+            sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString().Replace(",", ".") &
                   " where id_comb=" & idCombustivel
             db.Execute(sql)
 
             'registra a venda
             sql = "insert into tb_vendas (data, valor, qtde, id_comb, cpf) values ('" & DateTime.Now &
-                  "', " & (txt_valor.Text - lbl_desconto.Text).ToString.Replace(",", ".") &
+                  "', " & (txt_valor.Text - lbl_desconto.Text).ToString().Replace(",", ".") &
                   ", " & txt_qtde.Text.Replace(",", ".") & ", '" & idCombustivel &
                   "', '" & txt_cpf.Text & "')"
             db.Execute(sql)
 
-            sql = "update tb_clientes set fidelidade = fidelidade + " & (txt_valor.Text * 0.05).ToString.Replace(",", ".") &
+            sql = "update tb_clientes set fidelidade = fidelidade + " & (txt_valor.Text * 0.05).ToString().Replace(",", ".") &
                   " where cpf='" & txt_cpf.Text & "'"
             db.Execute(sql)
 
