@@ -1,0 +1,82 @@
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\bin\Debug\GST.exe.config
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\bin\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\bin\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\bin\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.vbproj.AssemblyReference.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.Form1.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_confirmar.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_selecao.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_vendas.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.Resources.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.vbproj.GenerateResource.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.vbproj.CoreCompileInputs.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_atualizar_combustivel.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_cadastro.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_login.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GST\obj\Debug\GST.frm_retaguarda.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\bin\Debug\GST.exe.config
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\bin\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\bin\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\bin\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.vbproj.AssemblyReference.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.Form1.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_atualizar_combustivel.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_cadastro.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_confirmar.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_login.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_retaguarda.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_selecao.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.frm_vendas.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.Resources.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.vbproj.GenerateResource.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.vbproj.CoreCompileInputs.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\Eng Soft\GTS - João 2\GST\obj\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\bin\Debug\GST.exe.config
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\bin\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\bin\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\bin\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.vbproj.AssemblyReference.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.Form1.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_atualizar_combustivel.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_cadastro.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_confirmar.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_retaguarda.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_selecao.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_vendas.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.Resources.resources
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.vbproj.GenerateResource.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.vbproj.CoreCompileInputs.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.exe
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.xml
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\Interop.ADODB.dll
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.vbproj.ResolveComReference.cache
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_nova_conta.resources
+D:\GST\bin\Debug\GST.exe.config
+D:\GST\bin\Debug\GST.exe
+D:\GST\bin\Debug\GST.pdb
+D:\GST\bin\Debug\GST.xml
+D:\GST\obj\Debug\GST.vbproj.AssemblyReference.cache
+D:\GST\obj\Debug\GST.vbproj.SuggestedBindingRedirects.cache
+D:\GST\obj\Debug\Interop.ADODB.dll
+D:\GST\obj\Debug\GST.vbproj.ResolveComReference.cache
+D:\GST\obj\Debug\GST.Form1.resources
+D:\GST\obj\Debug\GST.frm_atualizar_combustivel.resources
+D:\GST\obj\Debug\GST.frm_cadastro.resources
+D:\GST\obj\Debug\GST.frm_confirmar.resources
+D:\GST\obj\Debug\GST.frm_nova_conta.resources
+D:\GST\obj\Debug\GST.frm_retaguarda.resources
+D:\GST\obj\Debug\GST.frm_selecao.resources
+D:\GST\obj\Debug\GST.frm_vendas.resources
+D:\GST\obj\Debug\GST.Resources.resources
+D:\GST\obj\Debug\GST.vbproj.GenerateResource.cache
+D:\GST\obj\Debug\GST.vbproj.CoreCompileInputs.cache
+D:\GST\obj\Debug\GST.exe
+D:\GST\obj\Debug\GST.xml
+D:\GST\obj\Debug\GST.pdb
+C:\Users\inti_\Documents\FATEC\ADS MAII\GST\obj\Debug\GST.frm_relatorios.resources

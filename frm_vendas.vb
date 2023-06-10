@@ -55,7 +55,7 @@
             End If
 
             If rs.Fields(4).Value > 0 Then
-                If MsgBox("Você possui um desconto de " & rs.Fields(4).Value &
+                If MsgBox("Você possui um desconto de " & rs.Fields(4).Value & vbNewLine &
                           "Deseja resgatar agora?", MsgBoxStyle.Information + MsgBoxStyle.YesNo, "Desconto") Then
                     lbl_desconto.Text = rs.Fields(4).Value
                 End If
@@ -73,12 +73,12 @@
                   "', '" & txt_cpf.Text & "')"
             db.Execute(sql)
 
-            sql = "update tb_clientes set fidelidade = fidelidade + " & (txt_valor.Text * 0.1).ToString.Replace(",", ".") &
+            sql = "update tb_clientes set fidelidade = fidelidade + " & (txt_valor.Text * 0.05).ToString.Replace(",", ".") &
                   " where cpf='" & txt_cpf.Text & "'"
             db.Execute(sql)
 
             MsgBox("Sua venda com CPF foi confirmada com sucesso no valor de R$" &
-                   (txt_valor.Text * 0.9), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
+                   (txt_valor.Text - lbl_desconto.Text), MsgBoxStyle.Information + MsgBoxStyle.OkOnly, "Finalizado")
             frm_selecao.Show()
             Me.Close()
         Else

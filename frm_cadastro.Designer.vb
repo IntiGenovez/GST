@@ -28,12 +28,12 @@ Partial Class frm_cadastro
         Me.Label6 = New System.Windows.Forms.Label()
         Me.txt_nome = New System.Windows.Forms.TextBox()
         Me.txt_email = New System.Windows.Forms.TextBox()
-        Me.txt_telefone = New System.Windows.Forms.TextBox()
         Me.btn_cadastrar = New System.Windows.Forms.Button()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.txt_cpf = New System.Windows.Forms.MaskedTextBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Label4 = New System.Windows.Forms.Label()
+        Me.txt_telefone = New System.Windows.Forms.MaskedTextBox()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,15 +85,6 @@ Partial Class frm_cadastro
         Me.txt_email.Size = New System.Drawing.Size(378, 27)
         Me.txt_email.TabIndex = 9
         '
-        'txt_telefone
-        '
-        Me.txt_telefone.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_telefone.Location = New System.Drawing.Point(111, 195)
-        Me.txt_telefone.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.txt_telefone.Name = "txt_telefone"
-        Me.txt_telefone.Size = New System.Drawing.Size(379, 27)
-        Me.txt_telefone.TabIndex = 10
-        '
         'btn_cadastrar
         '
         Me.btn_cadastrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -144,17 +135,26 @@ Partial Class frm_cadastro
         Me.Label4.TabIndex = 19
         Me.Label4.Text = "CADASTRO DO CLIENTE:"
         '
+        'txt_telefone
+        '
+        Me.txt_telefone.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txt_telefone.Location = New System.Drawing.Point(111, 196)
+        Me.txt_telefone.Mask = "(99) 00000-0000"
+        Me.txt_telefone.Name = "txt_telefone"
+        Me.txt_telefone.Size = New System.Drawing.Size(133, 27)
+        Me.txt_telefone.TabIndex = 31
+        '
         'frm_cadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(541, 429)
+        Me.Controls.Add(Me.txt_telefone)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.txt_cpf)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.btn_cadastrar)
-        Me.Controls.Add(Me.txt_telefone)
         Me.Controls.Add(Me.txt_email)
         Me.Controls.Add(Me.txt_nome)
         Me.Controls.Add(Me.Label6)
@@ -174,10 +174,10 @@ Partial Class frm_cadastro
     Friend WithEvents Label6 As Label
     Friend WithEvents txt_nome As TextBox
     Friend WithEvents txt_email As TextBox
-    Friend WithEvents txt_telefone As TextBox
     Friend WithEvents btn_cadastrar As Button
     Friend WithEvents Label3 As Label
     Friend WithEvents txt_cpf As MaskedTextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label4 As Label
+    Friend WithEvents txt_telefone As MaskedTextBox
 End Class
