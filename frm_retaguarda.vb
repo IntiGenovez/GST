@@ -162,4 +162,29 @@ Public Class frm_retaguarda
     Private Sub btn_relat_Click(sender As Object, e As EventArgs) Handles btn_relat.Click
         frm_relatorios.ShowDialog()
     End Sub
+
+    Private Sub txt_senha_KeyDown(sender As Object, e As KeyEventArgs) Handles txt_senha.KeyDown
+        If e.KeyCode = 13 Then
+            sql = "SELECT * FROM tb_usuarios WHERE usuario = '" & txt_usuario.Text & "' AND senha = '" & txt_senha.Text & "'"
+            rs = db.Execute(sql)
+            If rs.EOF Then
+                MsgBox("Usuário ou senha não existe", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
+            ElseIf rs.Fields(4).Value = 2 Then
+                MsgBox("Seu usuário foi bloqueado pelo administrador", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "BLOQUEADO")
+            ElseIf rs.Fields("tipo").Value = "Administrador" Then
+                TabControl1.TabPages.Add(TabPage1)
+                TabControl1.TabPages.Add(TabPage2)
+                TabControl1.TabPages.Add(TabPage3)
+                TabControl1.TabPages.Add(TabPage4)
+                TabControl1.TabPages.Add(TabPage6)
+                TabControl1.TabPages.Remove(TabPage5)
+            Else
+                TabControl1.TabPages.Add(TabPage1)
+                TabControl1.TabPages.Add(TabPage2)
+                TabControl1.TabPages.Add(TabPage3)
+                TabControl1.TabPages.Add(TabPage4)
+                TabControl1.TabPages.Remove(TabPage5)
+            End If
+        End If
+    End Sub
 End Class
