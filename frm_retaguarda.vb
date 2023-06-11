@@ -5,6 +5,7 @@ Public Class frm_retaguarda
         carregar_combustivel()
         carregar_vendas()
         carregar_contas()
+        carregar_clientes()
         If TabControl1.TabPages.Contains(TabPage1) Or TabControl1.TabPages.Contains(TabPage2) Or TabControl1.TabPages.Contains(TabPage3) Or TabControl1.TabPages.Contains(TabPage4) Then
             TabControl1.TabPages.Remove(TabPage1)
             TabControl1.TabPages.Remove(TabPage2)
@@ -111,8 +112,8 @@ Public Class frm_retaguarda
     End Sub
 
     Private Sub dgv_clientes_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles dgv_clientes.CellContentClick
-        With dgv_contas
-            sql = "select * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
+        With dgv_clientes
+            sql = "select * from tb_clientes where nome='" & .CurrentRow.Cells(0).Value & "'"
             rs = db.Execute(sql)
             If .CurrentRow.Cells(3).Selected Then
                 isUpdate = True
@@ -125,10 +126,10 @@ Public Class frm_retaguarda
                     MsgBox("Não é possível deletar o cliente pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "AVISO")
                     Exit Sub
                 End If
-                sql = "delete * from tb_clientes where nome=" & .CurrentRow.Cells(0).Value
+                sql = "delete * from tb_clientes where nome='" & .CurrentRow.Cells(0).Value & "'"
                 db.Execute(sql)
             End If
-            carregar_combustivel()
+            carregar_clientes()
         End With
     End Sub
 

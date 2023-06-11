@@ -60,7 +60,8 @@
                     lbl_desconto.Text = rs.Fields(4).Value
                 End If
             End If
-
+            sql = "select * from tb_combustivel where id_comb=" & idCombustivel
+            rs = db.Execute(sql)
             'atualiza o estoque de combustivel
             sql = "update tb_combustivel set qtde =" & (rs.Fields(3).Value - txt_qtde.Text).ToString().Replace(",", ".") &
                   " where id_comb=" & idCombustivel
