@@ -42,7 +42,7 @@ Public Class frm_retaguarda
                 sql = "select * from tb_vendas where id_comb='" & .CurrentRow.Cells(0).Value & "'"
                 rs = db.Execute(sql)
                 If Not rs.EOF Then
-                    MsgBox("Não é possível deletar o combustível pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "AVISO")
+                    MsgBox("Não é possível deletar o combustível pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
                     Exit Sub
                 End If
                 sql = "delete * from tb_combustivel where id_comb=" & .CurrentRow.Cells(0).Value
@@ -123,7 +123,7 @@ Public Class frm_retaguarda
                 sql = "select * from tb_vendas where cpf='" & rs.Fields(0).Value & "'"
                 rs = db.Execute(sql)
                 If Not rs.EOF Then
-                    MsgBox("Não é possível deletar o cliente pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.YesNo, "AVISO")
+                    MsgBox("Não é possível deletar o cliente pois existem vendas associadas a ele!", MsgBoxStyle.Exclamation + MsgBoxStyle.OkOnly, "AVISO")
                     Exit Sub
                 End If
                 sql = "delete * from tb_clientes where nome='" & .CurrentRow.Cells(0).Value & "'"
