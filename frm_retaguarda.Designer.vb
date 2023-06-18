@@ -22,17 +22,11 @@ Partial Class frm_retaguarda
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_retaguarda))
         Me.DataGridViewImageColumn1 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.DataGridViewImageColumn2 = New System.Windows.Forms.DataGridViewImageColumn()
         Me.TabPage6 = New System.Windows.Forms.TabPage()
         Me.dgv_contas = New System.Windows.Forms.DataGridView()
-        Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Column19 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column20 = New System.Windows.Forms.DataGridViewImageColumn()
-        Me.Column21 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.ToolStrip3 = New System.Windows.Forms.ToolStrip()
         Me.lbl_nova_conta = New System.Windows.Forms.ToolStripLabel()
         Me.TabPage5 = New System.Windows.Forms.TabPage()
@@ -49,9 +43,6 @@ Partial Class frm_retaguarda
         Me.Column11 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column12 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Column13 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.ToolStrip2 = New System.Windows.Forms.ToolStrip()
-        Me.ToolStripLabel2 = New System.Windows.Forms.ToolStripLabel()
-        Me.ToolStripComboBox1 = New System.Windows.Forms.ToolStripComboBox()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.dgv_comb = New System.Windows.Forms.DataGridView()
         Me.Column14 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -81,13 +72,19 @@ Partial Class frm_retaguarda
         Me.Label1 = New System.Windows.Forms.Label()
         Me.cmb_combustivel = New System.Windows.Forms.ComboBox()
         Me.TabControl1 = New System.Windows.Forms.TabControl()
+        Me.Column15 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column16 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column17 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column18 = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Column19 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column20 = New System.Windows.Forms.DataGridViewImageColumn()
+        Me.Column21 = New System.Windows.Forms.DataGridViewCheckBoxColumn()
         Me.TabPage6.SuspendLayout()
         CType(Me.dgv_contas, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip3.SuspendLayout()
         Me.TabPage5.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         CType(Me.dgv_vendas, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.ToolStrip2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         CType(Me.dgv_comb, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ToolStrip1.SuspendLayout()
@@ -141,59 +138,6 @@ Partial Class frm_retaguarda
         Me.dgv_contas.RowTemplate.Height = 24
         Me.dgv_contas.Size = New System.Drawing.Size(919, 385)
         Me.dgv_contas.TabIndex = 3
-        '
-        'Column15
-        '
-        Me.Column15.HeaderText = "ID"
-        Me.Column15.MinimumWidth = 6
-        Me.Column15.Name = "Column15"
-        Me.Column15.ReadOnly = True
-        '
-        'Column16
-        '
-        Me.Column16.HeaderText = "Usuário"
-        Me.Column16.MinimumWidth = 6
-        Me.Column16.Name = "Column16"
-        Me.Column16.ReadOnly = True
-        '
-        'Column17
-        '
-        Me.Column17.HeaderText = "Status"
-        Me.Column17.MinimumWidth = 6
-        Me.Column17.Name = "Column17"
-        Me.Column17.ReadOnly = True
-        '
-        'Column18
-        '
-        Me.Column18.HeaderText = "Tipo de Conta"
-        Me.Column18.MinimumWidth = 6
-        Me.Column18.Name = "Column18"
-        Me.Column18.ReadOnly = True
-        '
-        'Column19
-        '
-        Me.Column19.HeaderText = "Editar"
-        Me.Column19.Image = Global.GST.My.Resources.Resources.editar
-        Me.Column19.MinimumWidth = 6
-        Me.Column19.Name = "Column19"
-        Me.Column19.ReadOnly = True
-        '
-        'Column20
-        '
-        Me.Column20.HeaderText = "Excluir"
-        Me.Column20.Image = Global.GST.My.Resources.Resources.excluir
-        Me.Column20.MinimumWidth = 6
-        Me.Column20.Name = "Column20"
-        Me.Column20.ReadOnly = True
-        '
-        'Column21
-        '
-        Me.Column21.FalseValue = "Inativo"
-        Me.Column21.HeaderText = "Bloquear"
-        Me.Column21.MinimumWidth = 6
-        Me.Column21.Name = "Column21"
-        Me.Column21.ReadOnly = True
-        Me.Column21.TrueValue = "Ativo"
         '
         'ToolStrip3
         '
@@ -301,7 +245,6 @@ Partial Class frm_retaguarda
         'TabPage4
         '
         Me.TabPage4.Controls.Add(Me.dgv_vendas)
-        Me.TabPage4.Controls.Add(Me.ToolStrip2)
         Me.TabPage4.Location = New System.Drawing.Point(4, 33)
         Me.TabPage4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage4.Name = "TabPage4"
@@ -319,13 +262,13 @@ Partial Class frm_retaguarda
         Me.dgv_vendas.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.dgv_vendas.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.Column10, Me.Column11, Me.Column12, Me.Column13})
         Me.dgv_vendas.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.dgv_vendas.Location = New System.Drawing.Point(3, 30)
+        Me.dgv_vendas.Location = New System.Drawing.Point(3, 2)
         Me.dgv_vendas.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.dgv_vendas.Name = "dgv_vendas"
         Me.dgv_vendas.ReadOnly = True
         Me.dgv_vendas.RowHeadersWidth = 51
         Me.dgv_vendas.RowTemplate.Height = 24
-        Me.dgv_vendas.Size = New System.Drawing.Size(919, 384)
+        Me.dgv_vendas.Size = New System.Drawing.Size(919, 412)
         Me.dgv_vendas.TabIndex = 1
         '
         'Column10
@@ -355,27 +298,6 @@ Partial Class frm_retaguarda
         Me.Column13.MinimumWidth = 6
         Me.Column13.Name = "Column13"
         Me.Column13.ReadOnly = True
-        '
-        'ToolStrip2
-        '
-        Me.ToolStrip2.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.ToolStrip2.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ToolStripLabel2, Me.ToolStripComboBox1})
-        Me.ToolStrip2.Location = New System.Drawing.Point(3, 2)
-        Me.ToolStrip2.Name = "ToolStrip2"
-        Me.ToolStrip2.Size = New System.Drawing.Size(919, 28)
-        Me.ToolStrip2.TabIndex = 0
-        Me.ToolStrip2.Text = "ToolStrip2"
-        '
-        'ToolStripLabel2
-        '
-        Me.ToolStripLabel2.Name = "ToolStripLabel2"
-        Me.ToolStripLabel2.Size = New System.Drawing.Size(49, 25)
-        Me.ToolStripLabel2.Text = "Filtros"
-        '
-        'ToolStripComboBox1
-        '
-        Me.ToolStripComboBox1.Name = "ToolStripComboBox1"
-        Me.ToolStripComboBox1.Size = New System.Drawing.Size(121, 28)
         '
         'TabPage3
         '
@@ -566,12 +488,12 @@ Partial Class frm_retaguarda
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.TabPage1.Size = New System.Drawing.Size(925, 416)
         Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Preços e Estoque"
+        Me.TabPage1.Text = "Consulta"
         Me.TabPage1.UseVisualStyleBackColor = True
         '
         'btn_relat
         '
-        Me.btn_relat.Location = New System.Drawing.Point(745, 353)
+        Me.btn_relat.Location = New System.Drawing.Point(722, 266)
         Me.btn_relat.Name = "btn_relat"
         Me.btn_relat.Size = New System.Drawing.Size(140, 48)
         Me.btn_relat.TabIndex = 7
@@ -666,12 +588,66 @@ Partial Class frm_retaguarda
         Me.TabControl1.Size = New System.Drawing.Size(933, 453)
         Me.TabControl1.TabIndex = 0
         '
+        'Column15
+        '
+        Me.Column15.HeaderText = "ID"
+        Me.Column15.MinimumWidth = 6
+        Me.Column15.Name = "Column15"
+        Me.Column15.ReadOnly = True
+        '
+        'Column16
+        '
+        Me.Column16.HeaderText = "Usuário"
+        Me.Column16.MinimumWidth = 6
+        Me.Column16.Name = "Column16"
+        Me.Column16.ReadOnly = True
+        '
+        'Column17
+        '
+        Me.Column17.HeaderText = "Status"
+        Me.Column17.MinimumWidth = 6
+        Me.Column17.Name = "Column17"
+        Me.Column17.ReadOnly = True
+        '
+        'Column18
+        '
+        Me.Column18.HeaderText = "Tipo de Conta"
+        Me.Column18.MinimumWidth = 6
+        Me.Column18.Name = "Column18"
+        Me.Column18.ReadOnly = True
+        '
+        'Column19
+        '
+        Me.Column19.HeaderText = "Editar"
+        Me.Column19.Image = Global.GST.My.Resources.Resources.editar
+        Me.Column19.MinimumWidth = 6
+        Me.Column19.Name = "Column19"
+        Me.Column19.ReadOnly = True
+        '
+        'Column20
+        '
+        Me.Column20.HeaderText = "Excluir"
+        Me.Column20.Image = Global.GST.My.Resources.Resources.excluir
+        Me.Column20.MinimumWidth = 6
+        Me.Column20.Name = "Column20"
+        Me.Column20.ReadOnly = True
+        '
+        'Column21
+        '
+        Me.Column21.FalseValue = "Ativo"
+        Me.Column21.HeaderText = "Bloquear"
+        Me.Column21.MinimumWidth = 6
+        Me.Column21.Name = "Column21"
+        Me.Column21.ReadOnly = True
+        Me.Column21.TrueValue = "Inativo"
+        '
         'frm_retaguarda
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.TabControl1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_retaguarda"
         Me.Text = "Retaguarda"
@@ -683,10 +659,7 @@ Partial Class frm_retaguarda
         Me.TabPage5.ResumeLayout(False)
         Me.TabPage5.PerformLayout()
         Me.TabPage4.ResumeLayout(False)
-        Me.TabPage4.PerformLayout()
         CType(Me.dgv_vendas, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.ToolStrip2.ResumeLayout(False)
-        Me.ToolStrip2.PerformLayout()
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage3.PerformLayout()
         CType(Me.dgv_comb, System.ComponentModel.ISupportInitialize).EndInit()
@@ -707,13 +680,6 @@ Partial Class frm_retaguarda
     Friend WithEvents DataGridViewImageColumn2 As DataGridViewImageColumn
     Friend WithEvents TabPage6 As TabPage
     Friend WithEvents dgv_contas As DataGridView
-    Friend WithEvents Column15 As DataGridViewTextBoxColumn
-    Friend WithEvents Column16 As DataGridViewTextBoxColumn
-    Friend WithEvents Column17 As DataGridViewTextBoxColumn
-    Friend WithEvents Column18 As DataGridViewTextBoxColumn
-    Friend WithEvents Column19 As DataGridViewImageColumn
-    Friend WithEvents Column20 As DataGridViewImageColumn
-    Friend WithEvents Column21 As DataGridViewCheckBoxColumn
     Friend WithEvents ToolStrip3 As ToolStrip
     Friend WithEvents lbl_nova_conta As ToolStripLabel
     Friend WithEvents TabPage5 As TabPage
@@ -730,9 +696,6 @@ Partial Class frm_retaguarda
     Friend WithEvents Column11 As DataGridViewTextBoxColumn
     Friend WithEvents Column12 As DataGridViewTextBoxColumn
     Friend WithEvents Column13 As DataGridViewTextBoxColumn
-    Friend WithEvents ToolStrip2 As ToolStrip
-    Friend WithEvents ToolStripLabel2 As ToolStripLabel
-    Friend WithEvents ToolStripComboBox1 As ToolStripComboBox
     Friend WithEvents TabPage3 As TabPage
     Friend WithEvents dgv_comb As DataGridView
     Friend WithEvents Column14 As DataGridViewTextBoxColumn
@@ -762,4 +725,11 @@ Partial Class frm_retaguarda
     Friend WithEvents Label1 As Label
     Friend WithEvents cmb_combustivel As ComboBox
     Friend WithEvents TabControl1 As TabControl
+    Friend WithEvents Column15 As DataGridViewTextBoxColumn
+    Friend WithEvents Column16 As DataGridViewTextBoxColumn
+    Friend WithEvents Column17 As DataGridViewTextBoxColumn
+    Friend WithEvents Column18 As DataGridViewTextBoxColumn
+    Friend WithEvents Column19 As DataGridViewImageColumn
+    Friend WithEvents Column20 As DataGridViewImageColumn
+    Friend WithEvents Column21 As DataGridViewCheckBoxColumn
 End Class

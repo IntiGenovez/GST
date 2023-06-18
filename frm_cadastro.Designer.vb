@@ -41,7 +41,7 @@ Partial Class frm_cadastro
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(32, 134)
+        Me.Label1.Location = New System.Drawing.Point(212, 150)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(47, 23)
         Me.Label1.TabIndex = 0
@@ -51,7 +51,7 @@ Partial Class frm_cadastro
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(32, 261)
+        Me.Label2.Location = New System.Drawing.Point(212, 277)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(48, 23)
         Me.Label2.TabIndex = 1
@@ -61,7 +61,7 @@ Partial Class frm_cadastro
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(32, 196)
+        Me.Label6.Location = New System.Drawing.Point(212, 212)
         Me.Label6.Name = "Label6"
         Me.Label6.Size = New System.Drawing.Size(64, 23)
         Me.Label6.TabIndex = 5
@@ -70,7 +70,7 @@ Partial Class frm_cadastro
         'txt_nome
         '
         Me.txt_nome.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_nome.Location = New System.Drawing.Point(84, 133)
+        Me.txt_nome.Location = New System.Drawing.Point(264, 149)
         Me.txt_nome.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_nome.Name = "txt_nome"
         Me.txt_nome.Size = New System.Drawing.Size(208, 27)
@@ -79,7 +79,7 @@ Partial Class frm_cadastro
         'txt_email
         '
         Me.txt_email.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_email.Location = New System.Drawing.Point(111, 260)
+        Me.txt_email.Location = New System.Drawing.Point(291, 276)
         Me.txt_email.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_email.Name = "txt_email"
         Me.txt_email.Size = New System.Drawing.Size(378, 27)
@@ -88,7 +88,7 @@ Partial Class frm_cadastro
         'btn_cadastrar
         '
         Me.btn_cadastrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_cadastrar.Location = New System.Drawing.Point(298, 336)
+        Me.btn_cadastrar.Location = New System.Drawing.Point(478, 352)
         Me.btn_cadastrar.Margin = New System.Windows.Forms.Padding(4)
         Me.btn_cadastrar.Name = "btn_cadastrar"
         Me.btn_cadastrar.Size = New System.Drawing.Size(191, 48)
@@ -100,7 +100,7 @@ Partial Class frm_cadastro
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(318, 134)
+        Me.Label3.Location = New System.Drawing.Point(498, 150)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(35, 23)
         Me.Label3.TabIndex = 17
@@ -109,7 +109,7 @@ Partial Class frm_cadastro
         'txt_cpf
         '
         Me.txt_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cpf.Location = New System.Drawing.Point(359, 133)
+        Me.txt_cpf.Location = New System.Drawing.Point(539, 149)
         Me.txt_cpf.Mask = "999,999,999-99"
         Me.txt_cpf.Name = "txt_cpf"
         Me.txt_cpf.Size = New System.Drawing.Size(131, 27)
@@ -118,7 +118,7 @@ Partial Class frm_cadastro
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(20, 31)
+        Me.PictureBox1.Location = New System.Drawing.Point(200, 47)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(189, 72)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -129,7 +129,7 @@ Partial Class frm_cadastro
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(228, 50)
+        Me.Label4.Location = New System.Drawing.Point(408, 66)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(270, 34)
         Me.Label4.TabIndex = 19
@@ -138,7 +138,7 @@ Partial Class frm_cadastro
         'txt_telefone
         '
         Me.txt_telefone.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_telefone.Location = New System.Drawing.Point(111, 196)
+        Me.txt_telefone.Location = New System.Drawing.Point(291, 212)
         Me.txt_telefone.Mask = "(99) 00000-0000"
         Me.txt_telefone.Name = "txt_telefone"
         Me.txt_telefone.Size = New System.Drawing.Size(133, 27)
@@ -148,7 +148,7 @@ Partial Class frm_cadastro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(541, 429)
+        Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.txt_telefone)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
@@ -160,6 +160,7 @@ Partial Class frm_cadastro
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_cadastro"
         Me.Text = "Cadastrar Cliente"

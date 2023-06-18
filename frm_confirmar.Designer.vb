@@ -22,6 +22,7 @@ Partial Class frm_confirmar
     'Não o modifique usando o editor de códigos.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(frm_confirmar))
         Me.Label1 = New System.Windows.Forms.Label()
         Me.txt_cadastrar = New System.Windows.Forms.Button()
         Me.txt_corrigir = New System.Windows.Forms.Button()
@@ -32,7 +33,7 @@ Partial Class frm_confirmar
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift SemiCondensed", 19.8!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(51, 41)
+        Me.Label1.Location = New System.Drawing.Point(228, 113)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(444, 40)
         Me.Label1.TabIndex = 0
@@ -41,7 +42,7 @@ Partial Class frm_confirmar
         'txt_cadastrar
         '
         Me.txt_cadastrar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cadastrar.Location = New System.Drawing.Point(55, 155)
+        Me.txt_cadastrar.Location = New System.Drawing.Point(232, 227)
         Me.txt_cadastrar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_cadastrar.Name = "txt_cadastrar"
         Me.txt_cadastrar.Size = New System.Drawing.Size(224, 49)
@@ -52,7 +53,7 @@ Partial Class frm_confirmar
         'txt_corrigir
         '
         Me.txt_corrigir.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_corrigir.Location = New System.Drawing.Point(285, 155)
+        Me.txt_corrigir.Location = New System.Drawing.Point(462, 227)
         Me.txt_corrigir.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_corrigir.Name = "txt_corrigir"
         Me.txt_corrigir.Size = New System.Drawing.Size(224, 49)
@@ -64,7 +65,7 @@ Partial Class frm_confirmar
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift SemiLight SemiConde", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(53, 92)
+        Me.Label2.Location = New System.Drawing.Point(230, 164)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(253, 29)
         Me.Label2.TabIndex = 3
@@ -74,11 +75,12 @@ Partial Class frm_confirmar
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(572, 255)
+        Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txt_corrigir)
         Me.Controls.Add(Me.txt_cadastrar)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_confirmar"
         Me.Text = "CPF não cadastrado"

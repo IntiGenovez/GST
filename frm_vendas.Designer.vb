@@ -42,7 +42,7 @@ Partial Class frm_vendas
         'txt_valor
         '
         Me.txt_valor.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_valor.Location = New System.Drawing.Point(83, 143)
+        Me.txt_valor.Location = New System.Drawing.Point(235, 212)
         Me.txt_valor.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_valor.Name = "txt_valor"
         Me.txt_valor.Size = New System.Drawing.Size(210, 28)
@@ -51,7 +51,7 @@ Partial Class frm_vendas
         'txt_qtde
         '
         Me.txt_qtde.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_qtde.Location = New System.Drawing.Point(385, 143)
+        Me.txt_qtde.Location = New System.Drawing.Point(537, 212)
         Me.txt_qtde.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.txt_qtde.Name = "txt_qtde"
         Me.txt_qtde.Size = New System.Drawing.Size(214, 28)
@@ -61,7 +61,7 @@ Partial Class frm_vendas
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(36, 147)
+        Me.Label1.Location = New System.Drawing.Point(188, 216)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(44, 23)
         Me.Label1.TabIndex = 2
@@ -71,7 +71,7 @@ Partial Class frm_vendas
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(330, 147)
+        Me.Label2.Location = New System.Drawing.Point(482, 216)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(49, 23)
         Me.Label2.TabIndex = 3
@@ -81,7 +81,7 @@ Partial Class frm_vendas
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Bahnschrift Condensed", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(491, 207)
+        Me.Label3.Location = New System.Drawing.Point(643, 276)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(66, 23)
         Me.Label3.TabIndex = 4
@@ -91,7 +91,7 @@ Partial Class frm_vendas
         '
         Me.lbl_desconto.AutoSize = True
         Me.lbl_desconto.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_desconto.Location = New System.Drawing.Point(562, 209)
+        Me.lbl_desconto.Location = New System.Drawing.Point(714, 278)
         Me.lbl_desconto.Name = "lbl_desconto"
         Me.lbl_desconto.Size = New System.Drawing.Size(16, 18)
         Me.lbl_desconto.TabIndex = 5
@@ -101,7 +101,7 @@ Partial Class frm_vendas
         '
         Me.lbl_cpf.AutoSize = True
         Me.lbl_cpf.Font = New System.Drawing.Font("Bahnschrift", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_cpf.Location = New System.Drawing.Point(36, 203)
+        Me.lbl_cpf.Location = New System.Drawing.Point(188, 272)
         Me.lbl_cpf.Name = "lbl_cpf"
         Me.lbl_cpf.Size = New System.Drawing.Size(263, 24)
         Me.lbl_cpf.TabIndex = 6
@@ -111,7 +111,7 @@ Partial Class frm_vendas
         'btn_voltar
         '
         Me.btn_voltar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_voltar.Location = New System.Drawing.Point(40, 277)
+        Me.btn_voltar.Location = New System.Drawing.Point(192, 346)
         Me.btn_voltar.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_voltar.Name = "btn_voltar"
         Me.btn_voltar.Size = New System.Drawing.Size(133, 49)
@@ -122,7 +122,7 @@ Partial Class frm_vendas
         'btn_confirmar
         '
         Me.btn_confirmar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_confirmar.Location = New System.Drawing.Point(469, 277)
+        Me.btn_confirmar.Location = New System.Drawing.Point(621, 346)
         Me.btn_confirmar.Name = "btn_confirmar"
         Me.btn_confirmar.Size = New System.Drawing.Size(130, 49)
         Me.btn_confirmar.TabIndex = 9
@@ -132,7 +132,7 @@ Partial Class frm_vendas
         'txt_cpf
         '
         Me.txt_cpf.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.txt_cpf.Location = New System.Drawing.Point(322, 201)
+        Me.txt_cpf.Location = New System.Drawing.Point(474, 270)
         Me.txt_cpf.Mask = "999,999,999-99"
         Me.txt_cpf.Name = "txt_cpf"
         Me.txt_cpf.Size = New System.Drawing.Size(138, 28)
@@ -142,7 +142,7 @@ Partial Class frm_vendas
         '
         Me.lbl_combustivel.AutoSize = True
         Me.lbl_combustivel.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lbl_combustivel.Location = New System.Drawing.Point(544, 66)
+        Me.lbl_combustivel.Location = New System.Drawing.Point(682, 72)
         Me.lbl_combustivel.Name = "lbl_combustivel"
         Me.lbl_combustivel.Size = New System.Drawing.Size(55, 21)
         Me.lbl_combustivel.TabIndex = 11
@@ -151,7 +151,7 @@ Partial Class frm_vendas
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(40, 37)
+        Me.PictureBox1.Location = New System.Drawing.Point(178, 43)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(189, 72)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -162,7 +162,7 @@ Partial Class frm_vendas
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(248, 56)
+        Me.Label4.Location = New System.Drawing.Point(386, 62)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(290, 34)
         Me.Label4.TabIndex = 23
@@ -172,7 +172,7 @@ Partial Class frm_vendas
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(653, 353)
+        Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.lbl_combustivel)
@@ -186,6 +186,7 @@ Partial Class frm_vendas
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.txt_qtde)
         Me.Controls.Add(Me.txt_valor)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_vendas"
         Me.Text = "GST"

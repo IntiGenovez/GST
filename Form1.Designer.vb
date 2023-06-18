@@ -33,7 +33,7 @@ Partial Class Form1
         'btn_venda
         '
         Me.btn_venda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_venda.Location = New System.Drawing.Point(369, 119)
+        Me.btn_venda.Location = New System.Drawing.Point(500, 176)
         Me.btn_venda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_venda.Name = "btn_venda"
         Me.btn_venda.Size = New System.Drawing.Size(207, 42)
@@ -44,7 +44,7 @@ Partial Class Form1
         'btn_retaguarda
         '
         Me.btn_retaguarda.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_retaguarda.Location = New System.Drawing.Point(369, 195)
+        Me.btn_retaguarda.Location = New System.Drawing.Point(500, 252)
         Me.btn_retaguarda.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.btn_retaguarda.Name = "btn_retaguarda"
         Me.btn_retaguarda.Size = New System.Drawing.Size(207, 42)
@@ -55,7 +55,7 @@ Partial Class Form1
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(25, 22)
+        Me.PictureBox1.Location = New System.Drawing.Point(114, 81)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(274, 282)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -66,7 +66,7 @@ Partial Class Form1
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Bahnschrift Condensed", 16.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(318, 43)
+        Me.Label2.Location = New System.Drawing.Point(449, 100)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(309, 34)
         Me.Label2.TabIndex = 6
@@ -76,11 +76,12 @@ Partial Class Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(662, 329)
+        Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.btn_retaguarda)
         Me.Controls.Add(Me.btn_venda)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form1"
         Me.Text = "Início"

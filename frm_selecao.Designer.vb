@@ -35,7 +35,7 @@ Partial Class frm_selecao
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Bahnschrift Condensed", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(33, 142)
+        Me.Label1.Location = New System.Drawing.Point(205, 244)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(238, 24)
         Me.Label1.TabIndex = 0
@@ -46,7 +46,7 @@ Partial Class frm_selecao
         Me.cmb_selecao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
         Me.cmb_selecao.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.cmb_selecao.FormattingEnabled = True
-        Me.cmb_selecao.Location = New System.Drawing.Point(311, 142)
+        Me.cmb_selecao.Location = New System.Drawing.Point(483, 244)
         Me.cmb_selecao.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.cmb_selecao.Name = "cmb_selecao"
         Me.cmb_selecao.Size = New System.Drawing.Size(205, 28)
@@ -55,7 +55,7 @@ Partial Class frm_selecao
         'btn_confirmar
         '
         Me.btn_confirmar.Font = New System.Drawing.Font("Bahnschrift Condensed", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btn_confirmar.Location = New System.Drawing.Point(372, 218)
+        Me.btn_confirmar.Location = New System.Drawing.Point(544, 320)
         Me.btn_confirmar.Name = "btn_confirmar"
         Me.btn_confirmar.Size = New System.Drawing.Size(144, 46)
         Me.btn_confirmar.TabIndex = 2
@@ -65,7 +65,7 @@ Partial Class frm_selecao
         'PictureBox1
         '
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(38, 39)
+        Me.PictureBox1.Location = New System.Drawing.Point(210, 46)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(189, 72)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom
@@ -76,7 +76,7 @@ Partial Class frm_selecao
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Bahnschrift SemiBold SemiConden", 16.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(246, 58)
+        Me.Label4.Location = New System.Drawing.Point(418, 65)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(270, 34)
         Me.Label4.TabIndex = 21
@@ -86,12 +86,13 @@ Partial Class frm_selecao
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(563, 298)
+        Me.ClientSize = New System.Drawing.Size(938, 464)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.btn_confirmar)
         Me.Controls.Add(Me.cmb_selecao)
         Me.Controls.Add(Me.Label1)
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "frm_selecao"
         Me.Text = "Seleção"
